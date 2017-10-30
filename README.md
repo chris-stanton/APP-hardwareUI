@@ -1,24 +1,25 @@
 
-# Full Stack Boilerplate with Angular Front-End
+# Rod Building Hardware Contoller UI
 
 ---
 
 ## Description:
-###### Full stack boilerplate that uses Angular.js front-end and Postgres SQL back-end. Framework contains multiple HTML views with controllers and a factory for server-side communication over HTTP.  Server-side is setup using Express.js and Postgres SQL for a database.
+###### UI to control my fishing rod dryers speed, fan speed, enclosure temperature and lights.
 
-<img src="./public/assets/images/screenshots/screenshot.png" width="50%">
+<img src="" width="50%">
 
 ---
 
 ## Technologies Used
-  1. Express.js - version ``` v4.15.2 ```
-  2. Angular.js - version ``` v1.6.3 ```
-  3. Angular Route - version ``` v1.6.3 ```
+  1. Express.js
+  2. Angular.js
+  3. Angular Route
   4. Node.js
-  5. Body-Parser - version ``` v1.17.1 ```
-  6. PG - version ``` v6.1.4 ```
-  7. GIT / GitHub
-  8. Bootstrap - version ``` v3.3.7 ```
+  5. Socket.io
+  6. Body-Parser
+  7. PG - version
+  8. GIT / GitHub
+
 
 ---
 
@@ -27,13 +28,9 @@
   2. Open terminal and navigate into folder
   3. Run commands:
     - ``` npm install ``` Installs Node Packages including dependencies from package.json
-    - ``` brew services start postgresql ``` Starts DB server connection to Postico (or equivalent for MongoDB)
     - ``` npm start ``` Starts server
     - ``` npm test ``` Starts server using Nodemon
-  4. Configure / Create DB
-    - Download and install SQL DB client to aide in creating the DB
-    - Cut and paste code from database.sql file into 3rd party software from the step pervious
-  5. Server is listening on port: 5000
+  4. Server is listening on port: 5000
 
 ---
 
