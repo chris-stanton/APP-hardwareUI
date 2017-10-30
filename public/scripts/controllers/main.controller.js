@@ -1,11 +1,20 @@
-myApp.controller('MainController',['FactoryFactory', '$scope', 'alertify', function(FactoryFactory, $scope, alertify) {
+myApp.controller('MainController',['FactoryFactory', 'alertify', function(FactoryFactory, alertify) {
 
   console.log('MainController running...');
 
-  var self = this;
+  const self = this;
 
   self.message = 'angular sourced';
 
   alertify.success("Welcome Chris!");
+
+
+
+
+
+
+
+
+
 
 }]); // end controller code block

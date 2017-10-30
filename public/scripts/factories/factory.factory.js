@@ -1,4 +1,5 @@
-myApp.factory('FactoryFactory',['$http',function($http) {
+
+myApp.factory('FactoryFactory',['$http', 'alertify', function($http, alertify) {
 
   console.log('FactoryFactory running...');
 
@@ -9,9 +10,7 @@ myApp.factory('FactoryFactory',['$http',function($http) {
 
 
 
-
-
-//public API
+// public API
   return {
 
   }

@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
 const arduino = require('./server/routes/arduino.js')
-const pool = require('./server/modules/database-config');
+// const pool = require('./server/modules/database-config');
 
 // defining routes
 const routes = require('./server/routes/arduino.js');
