@@ -1,4 +1,4 @@
-myApp.controller('LightController',['FactoryFactory', '$location', 'alertify', function(FactoryFactory, $location, alertify) {
+myApp.controller('LightController',['InitFactory', '$location', 'alertify', function(InitFactory, $location, alertify) {
 
   console.log('LightController running...');
 

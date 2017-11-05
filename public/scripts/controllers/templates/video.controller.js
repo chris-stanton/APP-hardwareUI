@@ -1,4 +1,4 @@
-myApp.controller('VideoController',['FactoryFactory', '$location', 'alertify', function(FactoryFactory, $location, alertify) {
+myApp.controller('VideoController',['InitFactory', '$location', 'alertify', function(InitFactory, $location, alertify) {
 
   console.log('VideoController running...');
 

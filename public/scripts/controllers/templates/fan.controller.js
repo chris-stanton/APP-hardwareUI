@@ -1,4 +1,4 @@
-myApp.controller('FanController',['FactoryFactory', '$location', 'alertify', function(FactoryFactory, $location, alertify) {
+myApp.controller('FanController',['InitFactory', '$location', 'alertify', function(InitFactory, $location, alertify) {
 
   console.log('FanController running...');
 

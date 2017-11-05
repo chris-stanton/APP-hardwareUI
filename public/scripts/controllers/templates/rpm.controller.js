@@ -1,4 +1,4 @@
-myApp.controller('RpmController',['FactoryFactory', '$location', 'alertify', function(FactoryFactory, alertify, $location) {
+myApp.controller('RpmController',['InitFactory', '$location', 'alertify', function(InitFactory, alertify, $location) {
 
   console.log('RpmController running...');
 

@@ -1,17 +1,10 @@
-myApp.controller('DashboardController',['FactoryFactory', 'alertify', function(FactoryFactory, alertify) {
+myApp.controller('DashboardController',['InitFactory', 'alertify', function(InitFactory, alertify) {
 
   console.log('DashboardController running...');
 
   const self = this;
 
   self.message = 'angular sourced';
-
-
-  function init() {
-    alertify.success("Welcome Chris!");
-  };
-
-
 
 
 
