@@ -4,12 +4,12 @@ myApp.config(['$routeProvider', function($routeProvider) {
 
   //routes
     $routeProvider
-        .when ('/main', {
-          templateUrl: './views/main-view.html',
-          controller: 'MainController',
-          controllerAs: 'mc'
+        .when ('/dashboard', {
+          templateUrl: './views/dashboard.html',
+          controller: 'DashboardController',
+          controllerAs: 'dbc'
         })
         .otherwise ( {
-            redirectTo: '/main'
+            redirectTo: '/dashboard'
         });
 }]);
