@@ -6,7 +6,13 @@ myApp.controller('DashboardController',['FactoryFactory', 'alertify', function(F
 
   self.message = 'angular sourced';
 
-  alertify.success("Welcome Chris!");
+
+  function init() {
+    alertify.success("Welcome Chris!");
+  };
+
+
+
 
 
 
