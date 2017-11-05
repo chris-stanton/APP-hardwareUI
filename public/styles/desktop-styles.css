@@ -11,7 +11,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #474747;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -30,22 +30,41 @@ main .row-one {
   flex-direction: row;
   height: 30vh;
   align-items: center;
-  font-size: 2.5em;
 }
   /*temp container*/
   .row-one .flex-temp-main_container {
+    display: flex;
     flex: 1;
-    border: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
+
   }
+
+    .flex-temp-main_container h6 {
+      font-size: 1em;
+    }
+
+    .flex-temp-main_container h1 {
+      font-size: 2.5em;
+    }
+
   /*rpm container*/
   .row-one .flex-rpm-main_container {
+    display: flex;
     flex: 1;
-    border: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
   }
+
+    .flex-rpm-main_container h6 {
+      font-size: 1em;
+    }
+
+    .flex-rpm-main_container h1 {
+      font-size: 2.5em;
+    }
 
 
 
@@ -58,9 +77,17 @@ main .row-two {
 }
   /*video container*/
   .row-two .flex-video-main_container {
+    display: flex;
     flex: 1;
+    justify-content: center;
     text-align: center;
+    height: 100%;
   }
+
+    .flex-video-main_container img {
+      height: 100%;
+      width: 60%;
+    }
 
 
 
@@ -70,19 +97,34 @@ main .row-three {
   flex-direction: row;
   height: 30vh;
   align-items: center;
-  font-size: 2.5em;
 }
   /*light container*/
   .row-three .flex-light-main_container {
+    display: flex;
     flex: 1;
-    border: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
   }
+    .flex-light-main_container h6 {
+      font-size: 1em;
+    }
+
+    .flex-light-main_container h1 {
+      font-size: 2.5em;
+    }
   /*fan container*/
   .row-three .flex-fan-main_container {
+    display: flex;
     flex: 1;
-    border: 1px solid white;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
   }
+    .flex-fan-main_container h6 {
+      font-size: 1em;
+    }
+
+    .flex-fan-main_container h1 {
+      font-size: 2.5em;
+    }
