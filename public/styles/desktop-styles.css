@@ -50,6 +50,26 @@ main {
   color: #00ff12;
 }
 
+.text-shadow-blue {
+  text-shadow: 5px 5px 5px #0012ff;
+}
+
+.text-shadow-orange {
+  text-shadow: 5px 5px 5px #ff7300;
+}
+
+.text-shadow-red {
+  text-shadow: 5px 5px 5px #ff0000;
+}
+
+.text-shadow-purple {
+  text-shadow: 5px 5px 5px #f900fe;
+}
+
+.text-shadow-green {
+  text-shadow: 5px 5px 5px #00ff12;
+}
+
 
 
 
@@ -190,10 +210,10 @@ main .row-three {
   height: 100%;
   width: 100%;
 }
-  /*data output container*/
+  /*temp data output container*/
   .flex-main-temp .temp-output-container {
     display: flex;
-    flex: 1;
+    flex: 3;
     flex-direction: row;
     justify-content: center;
     text-align: center;
@@ -203,15 +223,16 @@ main .row-three {
   }
     .flex-main-temp h1 {
       font-size: 10em;
-      text-shadow: 3px 3px 3px #ffffff;
+      /*text-shadow: 3px 3px 3px #ffffff;*/
     }
     .flex-main-temp  h6{
       font-size: 2em;
+      text-shadow: 1px 1px 1px #ffffff;
     }
-  /*radio container*/
+  /*temp radio container*/
   .flex-main-temp .temp-radio-container {
     display: flex;
-    flex: 1;
+    flex: 2;
     flex-direction: row;
     justify-content: center;
     text-align: center;
@@ -221,3 +242,33 @@ main .row-three {
     .temp-radio-container input {
       width: 50%;
     }
+
+
+
+
+
+/*sub footer container*/
+.flex-main-temp .sub-footer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: baseline;
+  height: 100%;
+  width: 100%;
+}
+  .sub-footer img {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    height: 5vh;
+    margin-left: 40px;
+  }
+  .sub-footer span {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    height: 5vh;
+    margin-right: 40px;
+    font-family: fantasy;
+    color: #f90bd3;
+  }
