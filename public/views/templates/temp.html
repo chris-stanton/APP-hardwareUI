@@ -1,1 +1,8 @@
-<h1>{{tc.message}}</h1>
+
+<section class="flex-main-temp">
+  <div>
+    <h1> {{tc.temp.range}} </h1>
+    <h6> &#8457; </h6>
+  </div>
+    <input type="range" min="65" max="90" ng-model="tc.temp.range">
+</section>

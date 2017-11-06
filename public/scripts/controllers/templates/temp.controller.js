@@ -5,6 +5,7 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
   const self = this;
 
   self.message = 'TempController';
+  console.log(self.temp);
 
 
 

@@ -29,6 +29,11 @@ myApp.config(['$routeProvider', function($routeProvider) {
           controller: 'LightController',
           controllerAs: 'lc'
         })
+        .when ('/vacuum', {
+          templateUrl: './views/templates/vacuum.html',
+          controller: 'VacuumController',
+          controllerAs: 'vac'
+        })
         .when ('/fan', {
           templateUrl: './views/templates/fan.html',
           controller: 'FanController',
