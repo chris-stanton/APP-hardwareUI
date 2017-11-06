@@ -16,9 +16,10 @@
   3. Angular Route
   4. Node.js
   5. Socket.io
-  6. Body-Parser
-  7. PG - version
-  8. GIT / GitHub
+  6. Johnny-Five
+  7. Body-Parser
+  8. PG - version
+  9. GIT / GitHub
 
 
 ---
