@@ -6,6 +6,10 @@ myApp.controller('DashboardController',['InitFactory', 'alertify', function(Init
 
   self.message = 'angular sourced';
 
+  // init data from arduino
+  self.arduinoObject = InitFactory.arduinoObject;
+
+
 
 
 

@@ -5,6 +5,10 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
   // defining this
   const self = this;
 
+  // init data from arduino
+  self.uistatus = InitFactory.arduinoObject;
+
+
   // radio state change listener
   self.tempChange = (uistatus) => {
 

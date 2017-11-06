@@ -5,8 +5,12 @@ myApp.controller('RpmController',['InitFactory', '$location', 'alertify', functi
   // defining this
   const self = this;
 
+  // init data from arduino
+  self.uistatus = InitFactory.arduinoObject;
+
   // radio state change listener
   self.rpmChange = (uistatus) => {
+
     if(uistatus <= 5 && uistatus != 0) {
       self.status = 'RPM is to LOW';
     } else if(uistatus > 5 && uistatus < 22) {
