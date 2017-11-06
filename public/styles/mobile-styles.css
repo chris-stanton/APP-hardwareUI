@@ -15,13 +15,13 @@
     /*temp container*/
     .row-one .flex-temp-main_container {
       width: 90%;
-      border: 1px solid #9c9797;
+      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
     /*rpm container*/
     .row-one .flex-rpm-main_container {
       width: 90%;
-      border: 1px solid #9c9797;
+      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
 
@@ -44,19 +44,19 @@
     /*light container*/
     .row-three .flex-light-main_container {
       width: 90%;
-      border: 1px solid #9c9797;
+      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
     /*vacuum container*/
     .row-three .flex-vacuum-main_container {
       width: 90%;
-      border: 1px solid #9c9797;
+      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
     /*fan container*/
     .row-three .flex-fan-main_container {
       width: 90%;
-      border: 1px solid #9c9797;
+      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
 

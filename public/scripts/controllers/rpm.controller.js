@@ -2,11 +2,24 @@ myApp.controller('RpmController',['InitFactory', '$location', 'alertify', functi
 
   console.log('RpmController running...');
 
+  // defining this
   const self = this;
 
-  self.message = 'RpmController';
+  // radio state change listener
+  self.rpmChange = (uistatus) => {
+    if(uistatus <= 5 && uistatus != 0) {
+      self.status = 'RPM is to LOW';
+    } else if(uistatus > 5 && uistatus < 22) {
+      self.status = 'RPM is OPTIMAL';
+    } else if(uistatus >= 22) {
+      self.status = 'RPM is to High';
+    } else if(uistatus == 0){
+      self.status = 'Motor is OFF';
+    } else {
+      alertify.error("Error finding RPM status");
+    };
 
-
+  };
 
 
 

@@ -1,1 +1,22 @@
-<h1>{{rc.message}}</h1>
+<section class="flex-main-rpm">
+  <section class="rpm-output-container" ng-if="rc.uistatus.rpm === 0">
+    <h1 class="text-shadow-red"> OFF </h1>
+  </section>
+  <section class="rpm-output-container" ng-if="rc.uistatus.rpm !== 0">
+    <h1 ng-if="rc.uistatus.rpm <= 5" class="text-shadow-blue"> {{rc.uistatus.rpm}} </h1>
+    <h1 ng-if="rc.uistatus.rpm > 5 && rc.uistatus.rpm < 22" class="text-shadow-orange"> {{rc.uistatus.rpm}} </h1>
+    <h1 ng-if="rc.uistatus.rpm >= 22" class="text-shadow-red"> {{rc.uistatus.rpm}} </h1>
+      <h6 ng-if="rc.uistatus.rpm <= 5" class="text-blue"> RPM </h6>
+      <h6 ng-if="rc.uistatus.rpm > 5 && rc.uistatus.rpm < 22" class="text-orange"> RPM </h6>
+      <h6 ng-if="rc.uistatus.rpm >= 22" class="text-red"> RPM </h6>
+  </section>
+  <section class="rpm-radio-container">
+    <input type="range" min="0" max="30" ng-model="rc.uistatus.rpm" ng-change="rc.rpmChange(rc.uistatus.rpm)">
+  </section>
+  <section class="sub-footer">
+    <a href="#!dashboard">
+      <img src="../assets/images/icons/dashboard.ico">
+    </a>
+    <span> {{rc.status}} </span>
+  </section>
+</section>

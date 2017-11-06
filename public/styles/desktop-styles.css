@@ -100,6 +100,7 @@ main .row-one {
     }
     .flex-temp-main_container h1 {
       font-size: 2.5em;
+      font-family: fantasy;
     }
   /*rpm container*/
   .row-one .flex-rpm-main_container {
@@ -114,6 +115,7 @@ main .row-one {
     }
     .flex-rpm-main_container h1 {
       font-size: 2.5em;
+      font-family: fantasy;
     }
 
 
@@ -160,6 +162,7 @@ main .row-three {
     }
     .flex-light-main_container h1 {
       font-size: 2.5em;
+      font-family: fantasy;
     }
   /*vaccum container*/
   .row-three .flex-vacuum-main_container {
@@ -174,6 +177,7 @@ main .row-three {
     }
     .flex-vacuum-main_container h1 {
       font-size: 2.5em;
+      font-family: fantasy;
     }
   /*fan container*/
   .row-three .flex-fan-main_container {
@@ -188,6 +192,7 @@ main .row-three {
     }
     .flex-fan-main_container h1 {
       font-size: 2.5em;
+      font-family: fantasy;
     }
 
 
@@ -201,7 +206,7 @@ main .row-three {
 /*                    */
 /*====================*/
 
-/*temp sub view main container*/
+/*TEMPERATURE sub view main container*/
 .flex-main-temp {
   display: flex;
   flex-direction: column;
@@ -209,8 +214,9 @@ main .row-three {
   align-items: center;
   height: 100%;
   width: 100%;
+  font-family: fantasy;
 }
-  /*temp data output container*/
+  /*TEMPERATURE data output container*/
   .flex-main-temp .temp-output-container {
     display: flex;
     flex: 3;
@@ -229,7 +235,7 @@ main .row-three {
       font-size: 2em;
       text-shadow: 1px 1px 1px #ffffff;
     }
-  /*temp radio container*/
+  /*TEMPERATURE radio container*/
   .flex-main-temp .temp-radio-container {
     display: flex;
     flex: 2;
@@ -245,10 +251,57 @@ main .row-three {
 
 
 
+/*RPM sub view main container*/
+.flex-main-rpm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: fantasy;
+}
+  /*RPM data output container*/
+  .flex-main-rpm .rpm-output-container {
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 100px 0px 20px 0px;
+  }
+    .flex-main-rpm h1 {
+      font-size: 10em;
+      /*text-shadow: 3px 3px 3px #ffffff;*/
+    }
+    .flex-main-rpm  h6{
+      font-size: 2em;
+      text-shadow: 1px 1px 1px #ffffff;
+    }
+  /*RPM radio container*/
+  .flex-main-rpm .rpm-radio-container {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+    .rpm-radio-container input {
+      width: 50%;
+    }
+
+
+
+
+
 
 
 /*sub footer container*/
-.flex-main-temp .sub-footer {
+.sub-footer {
   display: flex;
   flex: 1;
   flex-direction: row;
