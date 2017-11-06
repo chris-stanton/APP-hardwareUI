@@ -32,5 +32,4 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
 
 
 
-
 }]); // end controller code block
