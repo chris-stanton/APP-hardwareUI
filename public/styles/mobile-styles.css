@@ -70,7 +70,10 @@
 /*                    */
 /*====================*/
 
-
+/*temp radio button width*/
+  .temp-radio-container input {
+    width: 80%;
+  }
 
 
 

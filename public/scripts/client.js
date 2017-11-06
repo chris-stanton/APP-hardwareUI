@@ -10,32 +10,32 @@ myApp.config(['$routeProvider', function($routeProvider) {
           controllerAs: 'dbc'
         })
         .when ('/temp', {
-          templateUrl: './views/templates/temp.html',
+          templateUrl: './views/temp.html',
           controller: 'TempController',
           controllerAs: 'tc'
         })
         .when ('/rpm', {
-          templateUrl: './views/templates/rpm.html',
+          templateUrl: './views/rpm.html',
           controller: 'RpmController',
           controllerAs: 'rc'
         })
         .when ('/video', {
-          templateUrl: './views/templates/video.html',
+          templateUrl: './views/video.html',
           controller: 'VideoController',
           controllerAs: 'vc'
         })
         .when ('/light', {
-          templateUrl: './views/templates/light.html',
+          templateUrl: './views/light.html',
           controller: 'LightController',
           controllerAs: 'lc'
         })
         .when ('/vacuum', {
-          templateUrl: './views/templates/vacuum.html',
+          templateUrl: './views/vacuum.html',
           controller: 'VacuumController',
           controllerAs: 'vac'
         })
         .when ('/fan', {
-          templateUrl: './views/templates/fan.html',
+          templateUrl: './views/fan.html',
           controller: 'FanController',
           controllerAs: 'fc'
         })

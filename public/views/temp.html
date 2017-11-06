@@ -1,0 +1,15 @@
+
+<section class="flex-main-temp">
+  <section class="temp-output-container">
+    <h1 ng-if="tc.temp.range <= 69" class="text-blue"> {{tc.temp.range}} </h1>
+    <h1 ng-if="tc.temp.range > 69 && tc.temp.range < 80" class="text-orange"> {{tc.temp.range}} </h1>
+    <h1 ng-if="tc.temp.range >= 80" class="text-red"> {{tc.temp.range}} </h1>
+    <h6> &#8457; </h6>
+  </section>
+  <section class="temp-radio-container">
+    <input type="range" min="65" max="90" ng-model="tc.temp.range">
+  </section>
+  <section>
+    <img src="../assets/images/icons/dashboard.ico" alt="">
+  </section>
+</section>

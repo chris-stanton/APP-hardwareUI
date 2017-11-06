@@ -29,6 +29,28 @@ main {
   flex-direction: column;
 }
 
+/*define golbal text color*/
+.text-blue {
+  color: #0012ff;
+}
+
+.text-orange {
+  color: #ff7300;
+}
+
+.text-red {
+  color: #ff0000;
+}
+
+.text-purple {
+  color: #f900fe;
+}
+
+.text-green {
+  color: #00ff12;
+}
+
+
 
 
 
@@ -165,17 +187,37 @@ main .row-three {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
-  .flex-main-temp div {
+  /*data output container*/
+  .flex-main-temp .temp-output-container {
     display: flex;
+    flex: 1;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin: 40px;
+    height: 100%;
+    width: 100%;
+    margin: 100px 0px 20px 0px;
   }
     .flex-main-temp h1 {
       font-size: 10em;
+      text-shadow: 3px 3px 3px #ffffff;
     }
     .flex-main-temp  h6{
       font-size: 2em;
+    }
+  /*radio container*/
+  .flex-main-temp .temp-radio-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+    .temp-radio-container input {
+      width: 50%;
     }
