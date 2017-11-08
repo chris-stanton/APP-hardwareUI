@@ -9,7 +9,7 @@ myApp.controller('RpmController',['InitFactory', '$location', 'alertify', functi
   self.uistatus = InitFactory.arduinoObject;
 
   // init status message
-  self.status = 'Searching for Status...';
+  self.status = 'Searching for RPM Status...';
 
   // radio state change listener
   self.rpmChange = (uistatus) => {
