@@ -3,6 +3,7 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', function($http, $
 
   console.log('InitFactory running...');
 
+  // init alert message
   alertify.success("Welcome Chris!");
 
 // init object from Arduino (mockup object)
@@ -19,10 +20,13 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', function($http, $
 
 
 
+
+
+
 // public API
   return {
     // init object from arduino
     arduinoObject : arduinoObject
   }
 
-}]);
+}]); // end myAPP
