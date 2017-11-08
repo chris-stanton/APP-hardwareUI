@@ -11,7 +11,6 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
 
   // radio state change listener
   self.tempChange = (uistatus) => {
-
     if(uistatus <= 69) {
       self.status = 'Temp is to LOW';
     } else if(uistatus > 69 && uistatus < 80) {
