@@ -303,6 +303,7 @@ main .row-three {
   align-items: center;
   height: 100%;
   width: 100%;
+  font-family: fantasy;
 }
   .flex-main-video h1 {
     display: flex;
