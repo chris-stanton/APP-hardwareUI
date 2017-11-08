@@ -75,6 +75,15 @@
     width: 80%;
   }
 
+/*video image size*/
+  .flex-main-video h1 {
+    font-size: 3em;
+  }
+  .flex-main-video img {
+    height: 70%;
+    width: 95%;
+  }
+
 
 
 }

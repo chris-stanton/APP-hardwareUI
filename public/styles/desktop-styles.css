@@ -295,7 +295,30 @@ main .row-three {
     }
 
 
-
+/*VIDEO sub view main container*/
+.flex-main-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+  .flex-main-video h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5em;
+    margin: 20px 10px;
+  }
+  .flex-main-video img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 70%;
+    width: 70%;
+    margin: 20px 0px;
+  }
 
 
 
