@@ -8,6 +8,9 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
   // init data from arduino
   self.uistatus = InitFactory.arduinoObject;
 
+  // init status message
+  self.status = 'Searching for Status...';
+
 
   // radio state change listener
   self.tempChange = (uistatus) => {
