@@ -1,3 +1,4 @@
+
 myApp.controller('DashboardController',['InitFactory', 'alertify', function(InitFactory, alertify) {
 
   console.log('DashboardController running...');
