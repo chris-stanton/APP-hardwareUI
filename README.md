@@ -1,14 +1,10 @@
 
 # Rod Building Hardware Contoller UI
 
----
 
 ## Description:
 ###### UI to control my fishing rod dryers speed, fan speed, enclosure temperature and lights.
 
-<img src="" width="50%">
-
----
 
 ## Technologies Used
   1. Express.js
@@ -22,8 +18,6 @@
   9. GIT / GitHub
 
 
----
-
 ## Install App
   1. Download zip file
   2. Open terminal and navigate into folder
@@ -33,7 +27,6 @@
     - ``` npm test ``` Starts server using Nodemon
   4. Server is listening on port: 5000
 
----
 
 ## License
 ##### Copyright 2017 Chris Stanton
