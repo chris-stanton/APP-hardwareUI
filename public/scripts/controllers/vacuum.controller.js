@@ -14,7 +14,7 @@ myApp.controller('VacuumController',['InitFactory', '$location', 'alertify', fun
 
   // Radio button listener
   self.vacuumChange = (uistatus) => {
-console.log('button');
+
     if(uistatus === 'ON') {
       self.status = 'Vacuum ON'
     } else if(uistatus === 'OFF') {
