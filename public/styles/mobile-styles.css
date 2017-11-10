@@ -10,18 +10,18 @@
 
   /*row one container*/
   main .row-one {
-    flex-direction: column;
+    flex-direction: row;
   }
     /*temp container*/
     .row-one .flex-temp-main_container {
+      flex-direction: row;
       width: 90%;
-      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
     /*rpm container*/
     .row-one .flex-rpm-main_container {
+      flex-direction: row;
       width: 90%;
-      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
 
@@ -39,24 +39,24 @@
 
   /*row three container*/
   main .row-three {
-    flex-direction: column;
+    flex-direction: row;
   }
     /*light container*/
     .row-three .flex-light-main_container {
+      flex-direction: row;
       width: 90%;
-      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
     /*vacuum container*/
     .row-three .flex-vacuum-main_container {
+      flex-direction: row;
       width: 90%;
-      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
     /*fan container*/
     .row-three .flex-fan-main_container {
+      flex-direction: row;
       width: 90%;
-      /*border: 1px solid #9c9797;*/
       margin: 5px 0px;
     }
 

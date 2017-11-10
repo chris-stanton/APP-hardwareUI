@@ -29,45 +29,41 @@ main {
   flex-direction: column;
 }
 
-/*define golbal text color*/
+/*low temp*/
 .text-blue {
   color: #0012ff;
 }
-
+/*optimal temp*/
 .text-orange {
   color: #ff7300;
 }
-
+/*high temp*/
 .text-red {
   color: #ff0000;
 }
-
+/*status message*/
 .text-purple {
   color: #f900fe;
 }
-
-.text-green {
-  color: #00ff12;
-}
-
+/*low temp*/
 .text-shadow-blue {
   text-shadow: 5px 5px 5px #0012ff;
 }
-
+/*optimal temp*/
 .text-shadow-orange {
   text-shadow: 5px 5px 5px #ff7300;
 }
-
+/*high temp*/
 .text-shadow-red {
   text-shadow: 5px 5px 5px #ff0000;
 }
-
+/*status message*/
 .text-shadow-purple {
   text-shadow: 5px 5px 5px #f900fe;
 }
-
-.text-shadow-green {
-  text-shadow: 5px 5px 5px #00ff12;
+/*light on*/
+.text-shadow-yellow {
+  text-shadow: 5px 5px 5px #faff00;
 }
 
 
@@ -344,7 +340,7 @@ main .row-three {
     width: 100%;
   }
     .light-output-container h1 {
-      font-size: 3.5em;
+      font-size: 10em;
     }
   .flex-main-light .light-button-container {
     display: flex;
@@ -358,6 +354,15 @@ main .row-three {
     .light-button-container form {
       margin: 25px;
     }
+
+
+
+
+
+
+
+
+
 
 
 
