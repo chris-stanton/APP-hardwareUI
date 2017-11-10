@@ -14,7 +14,7 @@ myApp.controller('LightController',['InitFactory', '$location', 'alertify', func
 
   // Radio button listener
   self.lightChange = (uistatus) => {
-
+console.log('button');
     if(uistatus === 'ON') {
       self.status = 'Light ON'
     } else if(uistatus === 'OFF') {

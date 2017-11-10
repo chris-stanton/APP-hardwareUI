@@ -47,23 +47,23 @@ main {
 }
 /*low temp*/
 .text-shadow-blue {
-  text-shadow: 5px 5px 5px #0012ff;
+  text-shadow: 0px 0px 50px #0012ff;
 }
 /*optimal temp*/
 .text-shadow-orange {
-  text-shadow: 5px 5px 5px #ff7300;
+  text-shadow: 0px 0px 50px #ff7300;
 }
 /*high temp*/
 .text-shadow-red {
-  text-shadow: 5px 5px 5px #ff0000;
+  text-shadow: 0px 0px 50px #ff0000;
 }
 /*status message*/
 .text-shadow-purple {
-  text-shadow: 5px 5px 5px #f900fe;
+  text-shadow: 0px 0px 50px #f900fe;
 }
 /*light on*/
 .text-shadow-yellow {
-  text-shadow: 5px 5px 5px #faff00;
+  text-shadow: 0px 0px 50px #faff00;
 }
 
 
@@ -291,6 +291,7 @@ main .row-three {
     }
 
 
+
 /*VIDEO sub view main container*/
 .flex-main-video {
   display: flex;
@@ -353,6 +354,52 @@ main .row-three {
   }
     .light-button-container form {
       margin: 25px;
+    }
+    form input {
+      margin: 0px 20px;
+      /*height: 100%;*/
+    }
+
+
+
+/*VACUUM sub view main container*/
+.flex-main-vacuum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: fantasy;
+  color: #ffffff;
+}
+  .flex-main-vacuum .vacuum-output-container {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+    .vacuum-output-container h1 {
+      font-size: 10em;
+    }
+  .flex-main-vacuum .vacuum-button-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+    .vacuum-button-container form {
+      margin: 25px;
+    }
+    form input {
+      margin: 0px 20px;
+      /*height: 100%;*/
     }
 
 

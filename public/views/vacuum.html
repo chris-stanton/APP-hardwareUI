@@ -1,1 +1,19 @@
-<h1>{{vac.message}}</h1>
+
+<section class="flex-main-vacuum">
+  <section class="vacuum-output-container">
+    <h1 ng-show="vac.uistatus.vacuum === 'ON'" class="text-shadow-yellow">{{vac.uistatus.vacuum}}</h1>
+    <h1 ng-show="vac.uistatus.vacuum === 'OFF'" class="text-shadow-red">{{vac.uistatus.vacuum}}</h1>
+  </section>
+  <section class="vacuum-button-container">
+    <form>
+      <input type="radio" ng-show="vac.uistatus.vacuum === 'OFF'" ng-click="vac.vacuumChange(vac.uistatus.vacuum)" ng-model="vac.uistatus.vacuum" value="ON">
+      <input type="radio" ng-show="vac.uistatus.vacuum === 'ON'" ng-click="vac.vacuumChange(vac.uistatus.vacuum)" ng-model="vac.uistatus.vacuum" value="OFF">
+    </form>
+    <section class="sub-footer">
+      <a href="#!dashboard">
+        <img src="../assets/images/icons/dashboard.ico">
+      </a>
+      <span> {{vac.status}} </span>
+    </section>
+  </section>
+</section>

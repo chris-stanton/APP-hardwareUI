@@ -1,12 +1,12 @@
 
 <section class="flex-main-temp">
   <section class="temp-output-container">
-    <h1 ng-if="tc.uistatus.temp <= 69" class="text-shadow-blue"> {{tc.uistatus.temp}} </h1>
-    <h1 ng-if="tc.uistatus.temp > 69 && tc.uistatus.temp < 80" class="text-shadow-orange"> {{tc.uistatus.temp}} </h1>
-    <h1 ng-if="tc.uistatus.temp >= 80" class="text-shadow-red"> {{tc.uistatus.temp}} </h1>
-      <h6 ng-if="tc.uistatus.temp <= 69" class="text-blue"> &#8457; </h6>
-      <h6 ng-if="tc.uistatus.temp > 69 && tc.uistatus.temp < 80" class="text-orange"> &#8457; </h6>
-      <h6 ng-if="tc.uistatus.temp >= 80" class="text-red"> &#8457; </h6>
+    <h1 ng-show="tc.uistatus.temp <= 69" class="text-shadow-blue"> {{tc.uistatus.temp}} </h1>
+    <h1 ng-show="tc.uistatus.temp > 69 && tc.uistatus.temp < 80" class="text-shadow-orange"> {{tc.uistatus.temp}} </h1>
+    <h1 ng-show="tc.uistatus.temp >= 80" class="text-shadow-red"> {{tc.uistatus.temp}} </h1>
+      <h6 ng-show="tc.uistatus.temp <= 69" class="text-blue"> &#8457; </h6>
+      <h6 ng-show="tc.uistatus.temp > 69 && tc.uistatus.temp < 80" class="text-orange"> &#8457; </h6>
+      <h6 ng-show="tc.uistatus.temp >= 80" class="text-red"> &#8457; </h6>
   </section>
   <section class="temp-radio-container">
     <input type="range" min="65" max="90" ng-model="tc.uistatus.temp" ng-change="tc.tempChange(tc.uistatus.temp)">

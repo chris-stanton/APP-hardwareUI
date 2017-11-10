@@ -1,15 +1,13 @@
 
 <section class="flex-main-light">
   <section class="light-output-container">
-    <h1 ng-if="lc.uistatus.light === 'ON'" class="text-shadow-yellow">{{lc.uistatus.light}}</h1>
-    <h1 ng-if="lc.uistatus.light === 'OFF'" class="text-shadow-red">{{lc.uistatus.light}}</h1>
+    <h1 ng-show="lc.uistatus.light === 'ON'" class="text-shadow-yellow">{{lc.uistatus.light}}</h1>
+    <h1 ng-show="lc.uistatus.light === 'OFF'" class="text-shadow-red">{{lc.uistatus.light}}</h1>
   </section>
   <section class="light-button-container">
     <form>
-      <input type="radio" ng-change="lc.lightChange(lc.uistatus.light)" value="ON" ng-model="lc.uistatus.light">
-      <input type="radio" ng-change="lc.lightChange(lc.uistatus.light)" value="OFF" ng-model="lc.uistatus.light">
-        <!-- <input type="color" ng-model="lc.uistatus.light_RGB" ng-value="lc.uistatus.light_RGB"> -->
-
+      <input type="radio" ng-show="lc.uistatus.light === 'OFF'" ng-click="lc.lightChange(lc.uistatus.light)" ng-model="lc.uistatus.light" value="ON">
+      <input type="radio" ng-show="lc.uistatus.light === 'ON'" ng-click="lc.lightChange(lc.uistatus.light)" ng-model="lc.uistatus.light" value="OFF">
     </form>
     <section class="sub-footer">
       <a href="#!dashboard">
