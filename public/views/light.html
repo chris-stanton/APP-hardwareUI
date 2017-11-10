@@ -1,1 +1,18 @@
-<h1>{{lc.message}}</h1>
+
+<section class="flex-main-light">
+  <section class="light-output-container">
+    <h1>{{lc.uistatus.light}}</h1>
+  </section>
+  <section class="light-button-container">
+    <form>
+      <input type="radio" ng-change="lc.lightChange(lc.uistatus.light)" value="ON" ng-model="lc.uistatus.light">
+      <input type="radio" ng-change="lc.lightChange(lc.uistatus.light)" value="OFF" ng-model="lc.uistatus.light">
+    </form>
+    <section class="sub-footer">
+      <a href="#!dashboard">
+        <img src="../assets/images/icons/dashboard.ico">
+      </a>
+      <span> {{lc.status}} </span>
+    </section>
+  </section>
+</section>

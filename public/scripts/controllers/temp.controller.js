@@ -12,7 +12,7 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
   self.status = 'Searching for Temp Status...';
 
 
-  // radio state change listener
+  // range state change listener
   self.tempChange = (uistatus) => {
     if(uistatus <= 69) {
       self.status = 'Temp is to LOW';
@@ -21,8 +21,9 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
     } else if(uistatus >= 80) {
       self.status = 'Temp is to HIGH';
     } else {
+      console.log("Error finding TEMP status");
       alertify.error("Error finding TEMP status");
-    };
+    }
 
   };
 

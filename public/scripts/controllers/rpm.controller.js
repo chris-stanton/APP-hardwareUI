@@ -23,8 +23,9 @@ myApp.controller('RpmController',['InitFactory', '$location', 'alertify', functi
     } else if(uistatus == 0){
       self.status = 'Motor is OFF';
     } else {
+      console.log("Error finding RPM status");
       alertify.error("Error finding RPM status");
-    };
+    }
 
   };
 

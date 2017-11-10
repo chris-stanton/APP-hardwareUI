@@ -6,6 +6,25 @@ myApp.controller('LightController',['InitFactory', '$location', 'alertify', func
 
   self.message = 'LightController';
 
+  // init data from arduino
+  self.uistatus = InitFactory.arduinoObject;
+
+  // init status message
+  self.status = 'Searching for Temp Status...';
+
+  // Radio button listener
+  self.lightChange = (uistatus) => {
+
+    if(uistatus === 'ON') {
+      self.status = 'Light ON'
+    } else if(uistatus === 'OFF') {
+      self.status = 'Light OFF'
+    } else {
+      console.log("Error finding LIGHT status");
+      alertify.error("Error finding LIGHT status");
+    }
+
+  };
 
 
 

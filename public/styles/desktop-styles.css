@@ -323,6 +323,44 @@ main .row-three {
 
 
 
+/*LIGHT sub view main container*/
+.flex-main-light {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: fantasy;
+  color: #ffffff;
+}
+  .flex-main-light .light-output-container {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+    .light-output-container h1 {
+      font-size: 3.5em;
+    }
+  .flex-main-light .light-button-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+    .light-button-container form {
+      margin: 25px;
+    }
+
+
+
 
 /*sub footer container*/
 .sub-footer {
