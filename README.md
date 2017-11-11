@@ -2,11 +2,12 @@
 # Rod Building Hardware Contoller UI
 
 
-## Description:
+## Description
 ###### UI to control my fishing rod dryers speed, fan speed, enclosure temperature and lights.
 
 
 ## Technologies Used
+#### Software
   1. Express.js
   2. Angular.js
   3. Angular Route
@@ -16,6 +17,10 @@
   7. Body-Parser
   8. PG - version
   9. GIT / GitHub
+
+#### Hardware
+  1. Arduino ONU
+
 
 
 ## Install App
