@@ -6,7 +6,7 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', function($http, $
   // init alert message NOTE(need this to be username from DB)
   alertify.success("Welcome Chris!");
 
-// init object from Arduino (mockup object)
+  // init object from Arduino (mockup object)
   const arduinoObject = {
     temp: 73,
     rpm: 18,
@@ -24,7 +24,7 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', function($http, $
 
 
 
-// public API
+  // public API
   return {
     // init object from arduino
     arduinoObject : arduinoObject
