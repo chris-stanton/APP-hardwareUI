@@ -45,6 +45,14 @@ main {
 .text-purple {
   color: #f900fe;
 }
+/*light on*/
+.text-yellow {
+  color: #faff00;
+}
+/*motor on*/
+.text-green {
+  color: #41fa00;
+}
 /*low temp*/
 .text-shadow-blue {
   text-shadow: 0px 0px 50px #0012ff;
@@ -65,6 +73,10 @@ main {
 .text-shadow-yellow {
   text-shadow: 0px 0px 50px #faff00;
 }
+/*motor on*/
+.text-shadow-green {
+  text-shadow: 0px 0px 50px #41fa00;
+}
 
 
 
@@ -82,6 +94,7 @@ main .row-one {
   flex-direction: row;
   height: 30vh;
   align-items: center;
+  justify-content: center;
 }
   /*temp container*/
   .row-one .flex-temp-main_container {
@@ -395,6 +408,49 @@ main .row-three {
     width: 100%;
   }
     .vacuum-button-container form {
+      margin: 25px;
+    }
+    form input {
+      margin: 0px 20px;
+      /*height: 100%;*/
+    }
+
+
+
+
+/*FAN sub view main container*/
+.flex-main-fan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: fantasy;
+  color: #ffffff;
+}
+  .flex-main-fan .fan-output-container {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+    .fan-output-container h1 {
+      font-size: 10em;
+    }
+  .flex-main-fan .fan-button-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+    .fan-button-container form {
       margin: 25px;
     }
     form input {

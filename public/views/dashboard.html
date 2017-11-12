@@ -3,23 +3,25 @@
 <!--  ROW ONE  -->
 <!-- ========= -->
 <section class="row-one">
-
   <!-- temp container -->
   <section class="flex-temp-main_container">
     <a href="#!temp">
       <h6> Enclosure Temp </h6>
-        <h1> {{dbc.arduinoObject.temp}} &#8457; </h1>
+        <h1 ng-show="dbc.arduinoObject.temp <= 69" class="text-blue"> {{dbc.arduinoObject.temp}} &#8457; </h1>
+        <h1 ng-show="dbc.arduinoObject.temp > 69 && dbc.arduinoObject.temp < 80" class="text-orange"> {{dbc.arduinoObject.temp}} &#8457; </h1>
+        <h1 ng-show="dbc.arduinoObject.temp >= 80" class="text-red"> {{dbc.arduinoObject.temp}} &#8457; </h1>
     </a>
   </section>
-
   <!-- rpm container -->
   <section class="flex-rpm-main_container">
     <a href="#!rpm">
       <h6> Motor RPM </h6>
-        <h1> {{dbc.arduinoObject.rpm}} RPM </h1>
+        <h1 ng-show="dbc.arduinoObject.rpm <= 5 && dbc.arduinoObject.rpm != 0" class="text-red"> {{dbc.RPMMessage}} RPM </h1>
+        <h1 ng-show="dbc.arduinoObject.rpm > 5 && dbc.arduinoObject.rpm < 22" class="text-orange"> {{dbc.RPMMessage}} RPM </h1>
+        <h1 ng-show="dbc.arduinoObject.rpm >= 22" class="text-red"> {{dbc.RPMMessage}} RPM </h1>
+        <h1 ng-show="dbc.arduinoObject.rpm == 0" class="text-red"> {{dbc.RPMMessage}} </h1>
     </a>
   </section>
-
 </section>
 
 
@@ -27,14 +29,12 @@
 <!--  ROW TWO  -->
 <!-- ========= -->
 <section class="row-two">
-
   <!-- video container -->
   <section class="flex-video-main_container">
     <a href="#!video">
       <img ng-src="../assets/images/backgrounds/video.png">
     </a>
   </section>
-
 </section>
 
 
@@ -42,29 +42,28 @@
 <!-- ROW THREE -->
 <!-- ========= -->
 <section class="row-three">
-
   <!-- light container -->
   <section class="flex-light-main_container">
     <a href="#!light">
       <h6> Light Control </h6>
-        <h1> {{dbc.arduinoObject.light}} </h1>
+        <h1 ng-show="dbc.arduinoObject.light === 'ON'" class="text-yellow"> {{dbc.arduinoObject.light}} </h1>
+        <h1 ng-show="dbc.arduinoObject.light === 'OFF'" class="text-red"> {{dbc.arduinoObject.light}} </h1>
     </a>
   </section>
-
   <!-- light container -->
   <section class="flex-vacuum-main_container">
     <a href="#!vacuum">
       <h6> VACUUM </h6>
-        <h1> {{dbc.arduinoObject.vacuum}} </h1>
+        <h1 ng-show="dbc.arduinoObject.vacuum === 'ON'" class="text-green"> {{dbc.arduinoObject.vacuum}} </h1>
+        <h1 ng-show="dbc.arduinoObject.vacuum === 'OFF'" class="text-red"> {{dbc.arduinoObject.vacuum}} </h1>
     </a>
   </section>
-
   <!-- fan container -->
   <section class="flex-fan-main_container">
     <a href="#!fan">
-      <h6> Fan Speed </h6>
-        <h1> {{dbc.arduinoObject.fan}} </h1>
+      <h6> Fan </h6>
+        <h1 ng-show="dbc.arduinoObject.fan === 'ON'" class="text-green"> {{dbc.arduinoObject.fan}} </h1>
+        <h1 ng-show="dbc.arduinoObject.fan === 'OFF'" class="text-red"> {{dbc.arduinoObject.fan}} </h1>
     </a>
   </section>
-
 </section>

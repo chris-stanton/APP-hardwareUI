@@ -1,1 +1,19 @@
-<h1>{{fc.message}}</h1>
+
+<section class="flex-main-fan">
+  <section class="fan-output-container">
+    <h1 ng-show="fc.uistatus.fan === 'ON'" class="text-shadow-green">{{fc.uistatus.fan}}</h1>
+    <h1 ng-show="fc.uistatus.fan === 'OFF'" class="text-shadow-red">{{fc.uistatus.fan}}</h1>
+  </section>
+  <section class="fan-button-container">
+    <form>
+      <input type="radio" ng-show="fc.uistatus.fan === 'OFF'" ng-click="fc.fanChange(fc.uistatus.fan)" ng-model="fc.uistatus.fan" value="ON">
+      <input type="radio" ng-show="fc.uistatus.fan === 'ON'" ng-click="fc.fanChange(fc.uistatus.fan)" ng-model="fc.uistatus.fan" value="OFF">
+    </form>
+    <section class="sub-footer">
+      <a href="#!dashboard">
+        <img src="../assets/images/icons/dashboard.ico">
+      </a>
+      <span>{{fc.status}}</span>
+    </section>
+  </section>
+</section>

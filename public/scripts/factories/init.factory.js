@@ -14,7 +14,7 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', function($http, $
     light: 'ON',
     light_RGB: 'rgb(255, 255, 255)',
     vacuum: 'OFF',
-    fan: 'LOW'
+    fan: 'OFF'
   }
 
 
