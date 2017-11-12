@@ -9,10 +9,7 @@ myApp.controller('VacuumController',['InitFactory', '$location', 'alertify', fun
   // init data from arduino
   self.uistatus = InitFactory.arduinoObject;
 
-  // init status message
-  self.status = 'Searching for Vacuum Status...';
-
-  // Radio button listener
+  // Radio button listener to get footer status
   self.vacuumChange = (uistatus) => {
 
     if(uistatus === 'ON') {

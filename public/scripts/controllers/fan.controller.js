@@ -9,10 +9,7 @@ myApp.controller('FanController',['InitFactory', '$location', 'alertify', functi
   // init data from arduino
   self.uistatus = InitFactory.arduinoObject;
 
-  // init status message
-  self.status = 'Searching for Fan Status...';
-
-  // Radio button listener
+  // Radio button listener to get footer status
   self.fanChange = (uistatus) => {
     if(uistatus === 'ON') {
       self.status = 'Fan ON'

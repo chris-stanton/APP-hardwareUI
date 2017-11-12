@@ -8,9 +8,6 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
   // init data from arduino
   self.uistatus = InitFactory.arduinoObject;
 
-  // init status message
-  self.status = 'Searching for Temp Status...';
-
   // range state change listener for footer status
   self.tempChange = (uistatus) => {
     if(uistatus <= 69) {

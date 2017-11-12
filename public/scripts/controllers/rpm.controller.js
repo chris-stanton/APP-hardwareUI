@@ -8,10 +8,7 @@ myApp.controller('RpmController',['InitFactory', '$location', 'alertify', functi
   // init data from arduino
   self.uistatus = InitFactory.arduinoObject;
 
-  // init status message
-  self.status = 'Searching for RPM Status...';
-
-  // radio state change listener
+  // radio state change listener to get footer status
   self.rpmChange = (uistatus) => {
 
     if(uistatus <= 5 && uistatus != 0) {

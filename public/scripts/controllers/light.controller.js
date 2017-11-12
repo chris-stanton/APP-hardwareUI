@@ -9,12 +9,8 @@ myApp.controller('LightController',['InitFactory', '$location', 'alertify', func
   // init data from arduino
   self.uistatus = InitFactory.arduinoObject;
 
-  // init status message
-  self.status = 'Searching for Temp Status...';
-
-  // Radio button listener
+  // Radio button listener to get footer status
   self.lightChange = (uistatus) => {
-
     if(uistatus === 'ON') {
       self.status = 'Light ON'
     } else if(uistatus === 'OFF') {
@@ -23,7 +19,7 @@ myApp.controller('LightController',['InitFactory', '$location', 'alertify', func
       console.log("Error finding LIGHT status");
       alertify.error("Error finding LIGHT status");
     }
-  };
+  }
 
   // gets footer status on init
   let uistatus = self.uistatus.light;
