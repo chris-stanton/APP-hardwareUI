@@ -2,11 +2,11 @@
 # Rod Building Hardware Contoller UI
 
 
-## Description
-###### UI to control my fishing rod dryers speed, fan speed, enclosure temperature and lights.
+## Description:
+###### UI to control my fishing rod dryers speed, fan speed, enclosure temperature and lights remotely.
 
 
-## Technologies Used
+## Technologies Used:
 #### Software
   1. Express.js
   2. Angular.js
@@ -23,7 +23,7 @@
 
 
 
-## Install App
+## Install App:
   1. Download zip file
   2. Open terminal and navigate into folder
   3. Run commands:
@@ -33,8 +33,8 @@
   4. Server is listening on port: 5000
 
 
-## License
-##### Copyright 2017 Chris Stanton
+## License:
+##### Copyright 2017 Christopher J. Stanton
 
 ###### Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
