@@ -23,10 +23,11 @@ myApp.controller('VacuumController',['InitFactory', '$location', 'alertify', fun
       console.log("Error finding VACUUM status");
       alertify.error("Error finding VACUUM status");
     }
+  }
 
-  };
-
-
+  // gets footer status on init
+  let uistatus = self.uistatus.vacuum;
+  self.vacuumChange(uistatus);
 
 
 

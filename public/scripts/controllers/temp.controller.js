@@ -11,8 +11,7 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
   // init status message
   self.status = 'Searching for Temp Status...';
 
-
-  // range state change listener
+  // range state change listener for footer status
   self.tempChange = (uistatus) => {
     if(uistatus <= 69) {
       self.status = 'Temp is to LOW';
@@ -26,6 +25,10 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
     }
 
   };
+
+  // gets footer status on init
+  let uistatus = self.uistatus.temp;
+  self.tempChange(uistatus);
 
 
 

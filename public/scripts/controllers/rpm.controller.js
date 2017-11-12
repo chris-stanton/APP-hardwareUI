@@ -26,10 +26,11 @@ myApp.controller('RpmController',['InitFactory', '$location', 'alertify', functi
       console.log("Error finding RPM status");
       alertify.error("Error finding RPM status");
     }
+  }
 
-  };
-
-
+  // gets footer status on init
+  let uistatus = self.uistatus.rpm;
+  self.rpmChange(uistatus);
 
 
 

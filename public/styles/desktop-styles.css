@@ -106,10 +106,12 @@ main .row-one {
   }
     .flex-temp-main_container h6 {
       font-size: 1em;
+
     }
     .flex-temp-main_container h1 {
       font-size: 2.5em;
       font-family: fantasy;
+      text-shadow: 1px 1px 1px #ffffff;
     }
   /*rpm container*/
   .row-one .flex-rpm-main_container {
@@ -125,6 +127,7 @@ main .row-one {
     .flex-rpm-main_container h1 {
       font-size: 2.5em;
       font-family: fantasy;
+      text-shadow: 1px 1px 1px #ffffff;
     }
 
 
@@ -172,6 +175,7 @@ main .row-three {
     .flex-light-main_container h1 {
       font-size: 2.5em;
       font-family: fantasy;
+      text-shadow: 1px 1px 1px #ffffff;
     }
   /*vaccum container*/
   .row-three .flex-vacuum-main_container {
@@ -187,6 +191,7 @@ main .row-three {
     .flex-vacuum-main_container h1 {
       font-size: 2.5em;
       font-family: fantasy;
+      text-shadow: 1px 1px 1px #ffffff;
     }
   /*fan container*/
   .row-three .flex-fan-main_container {
@@ -202,6 +207,7 @@ main .row-three {
     .flex-fan-main_container h1 {
       font-size: 2.5em;
       font-family: fantasy;
+      text-shadow: 1px 1px 1px #ffffff;
     }
 
 

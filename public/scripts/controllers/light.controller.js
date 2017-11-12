@@ -23,8 +23,11 @@ myApp.controller('LightController',['InitFactory', '$location', 'alertify', func
       console.log("Error finding LIGHT status");
       alertify.error("Error finding LIGHT status");
     }
-
   };
+
+  // gets footer status on init
+  let uistatus = self.uistatus.light;
+  self.lightChange(uistatus);
 
 
 

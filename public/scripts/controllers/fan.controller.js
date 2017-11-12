@@ -24,6 +24,10 @@ myApp.controller('FanController',['InitFactory', '$location', 'alertify', functi
     }
   };
 
+  // gets footer status on init
+  let uistatus = self.uistatus.fan;
+  self.fanChange(uistatus);
+
 
 
 
