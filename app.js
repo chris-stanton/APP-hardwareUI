@@ -1,4 +1,5 @@
 
+// requiring dependancies
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -9,12 +10,12 @@ const arduino = require('./server/routes/arduino.js')
 // defining routes
 const routes = require('./server/routes/arduino.js');
 
-//Serve back static files
+// serve back static files
 app.use(express.static(path.join(__dirname, './public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-//Handle index file separately
+// handle index file separately
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '.public/index.html'));
 });

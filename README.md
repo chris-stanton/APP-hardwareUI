@@ -4,7 +4,7 @@
 
 ## Description:
 ###### UI to control my fishing rod dryers speed, fan speed, enclosure temperature and lights remotely.
-###### Live demo version: https://hardwareui.herokuapp.com/ 
+###### Live demo version: https://hardwareui.herokuapp.com/
 
 
 ## Technologies Used:
@@ -32,6 +32,7 @@
     - ``` npm start ``` Starts server
     - ``` npm test ``` Starts server using Nodemon
   4. Server is listening on port: 5000
+  5. `Procfile` is for Heroku deploy.  Used to tell Heroku how to start the Express server.
 
 
 ## License:
