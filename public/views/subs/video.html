@@ -1,6 +1,35 @@
 
 <section class="flex-main-video">
-    <h1> Live Video </h1>
-    <!-- <iframe src=""></iframe> -->
-    <img src="../assets/images/backgrounds/video.png">
+
+  <section class="flex-videodata-container">
+
+    <section class="flex-videostats-container">
+      <div>
+        <h5> Connection Strength </h5>
+        <h6> value </h6>
+      </div>
+      <div>
+        <h5> Connection Name </h5>
+        <h6> value </h6>
+      </div>
+      <div>
+        <h5> IP Address </h5>
+        <h6> value </h6>
+      </div>
+    </section>
+
+    <section class="flex-videofeed-container">
+      <img ng-src="../assets/images/backgrounds/video-light.png" ng-show="vc.uistatus.light === 'ON'">
+      <img ng-src="../assets/images/backgrounds/video-dark.png" ng-show="vc.uistatus.light === 'OFF'">
+    </section>
+
+  </section>
+
+  <section class="sub-footer">
+    <a href="#!dashboard">
+      <img src="../assets/images/icons/dashboard.ico">
+    </a>
+    <span> {{rc.status}} </span>
+  </section>
+
 </section>

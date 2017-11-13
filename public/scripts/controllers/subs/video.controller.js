@@ -6,6 +6,9 @@ myApp.controller('VideoController',['InitFactory', '$location', 'alertify', func
 
   self.message = 'VideoController';
 
+  // init data from arduino
+  self.uistatus = InitFactory.arduinoObject;
+
 
 
 
