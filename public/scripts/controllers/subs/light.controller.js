@@ -12,9 +12,9 @@ myApp.controller('LightController',['InitFactory', '$location', 'alertify', func
   // Radio button listener to get footer status
   self.lightChange = (uistatus) => {
     if(uistatus === 'ON') {
-      self.status = 'Light ON'
+      self.status = 'Lights ON'
     } else if(uistatus === 'OFF') {
-      self.status = 'Light OFF'
+      self.status = 'Lights OFF'
     } else {
       console.log("Error finding LIGHT status");
       alertify.error("Error finding LIGHT status");
