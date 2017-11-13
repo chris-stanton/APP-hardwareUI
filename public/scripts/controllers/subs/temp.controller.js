@@ -25,6 +25,7 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
 
   // gets footer status on init
   let uistatus = self.uistatus.temp;
+  // controller value on init
   self.tempChange(uistatus);
 
 
