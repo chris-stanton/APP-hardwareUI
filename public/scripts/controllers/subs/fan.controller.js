@@ -9,17 +9,18 @@ myApp.controller('FanController',['InitFactory', '$location', 'alertify', functi
   // init data from arduino
   self.uistatus = InitFactory.arduinoObject;
 
-  // Radio button listener to get footer status
+  // Radio button listener to check footer status
   self.fanChange = (uistatus) => {
     if(uistatus === 'ON') {
-      self.status = 'Fan ON'
+      self.status = 'Fan ON';
     } else if(uistatus === 'OFF') {
-      self.status = 'Fan OFF'
+      self.status = 'Fan OFF';
     } else {
-      console.log("Error finding FAN status");
+      self.status = 'Error finding FAN status';
       alertify.error("Error finding FAN status");
+      console.log("Error finding FAN status");
     }
-  };
+  }
 
   // gets footer status on init
   let uistatus = self.uistatus.fan;

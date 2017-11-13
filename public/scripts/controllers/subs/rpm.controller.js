@@ -8,7 +8,7 @@ myApp.controller('RpmController',['InitFactory', '$location', 'alertify', functi
   // init data from arduino
   self.uistatus = InitFactory.arduinoObject;
 
-  // radio state change listener to get footer status
+  // radio state change listener to check footer status
   self.rpmChange = (uistatus) => {
 
     if(uistatus <= 5 && uistatus != 0) {
@@ -20,8 +20,9 @@ myApp.controller('RpmController',['InitFactory', '$location', 'alertify', functi
     } else if(uistatus == 0){
       self.status = 'Motor is OFF';
     } else {
-      console.log("Error finding RPM status");
+      self.status = 'Error finding RPM status';
       alertify.error("Error finding RPM status");
+      console.log("Error finding RPM status");
     }
   }
 

@@ -17,11 +17,11 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
     } else if(uistatus >= 80) {
       self.status = 'Temp is to HIGH';
     } else {
-      console.log("Error finding TEMP status");
+      self.status = 'Error finding TEMP status';
       alertify.error("Error finding TEMP status");
+      console.log("Error finding TEMP status");
     }
-
-  };
+  }
 
   // gets footer status on init
   let uistatus = self.uistatus.temp;

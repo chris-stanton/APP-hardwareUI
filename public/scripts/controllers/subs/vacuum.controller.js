@@ -11,14 +11,14 @@ myApp.controller('VacuumController',['InitFactory', '$location', 'alertify', fun
 
   // Radio button listener to get footer status
   self.vacuumChange = (uistatus) => {
-
     if(uistatus === 'ON') {
-      self.status = 'Vacuum ON'
+      self.status = 'Vacuum ON';
     } else if(uistatus === 'OFF') {
-      self.status = 'Vacuum OFF'
+      self.status = 'Vacuum OFF';
     } else {
-      console.log("Error finding VACUUM status");
+      self.status = 'Error finding VACUUM status';
       alertify.error("Error finding VACUUM status");
+      console.log("Error finding VACUUM status");
     }
   }
 
