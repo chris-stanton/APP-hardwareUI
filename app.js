@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 //Handle index file separately
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '.public/index.html'));
-})
+});
 
 // routes
 app.use('/arduino', arduino);
