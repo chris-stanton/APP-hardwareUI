@@ -12,6 +12,7 @@
         <h1 ng-show="dbc.arduinoObject.temp >= 80" class="text-red"> {{dbc.arduinoObject.temp}} &#8457; </h1>
     </a>
   </section>
+
   <!-- rpm container -->
   <section class="flex-rpm-main_container">
     <a href="#!rpm">
@@ -51,6 +52,7 @@
         <h1 ng-show="dbc.arduinoObject.light === 'OFF'" class="text-red"> {{dbc.arduinoObject.light}} </h1>
     </a>
   </section>
+
   <!-- light container -->
   <section class="flex-vacuum-main_container">
     <a href="#!vacuum">
@@ -59,6 +61,7 @@
         <h1 ng-show="dbc.arduinoObject.vacuum === 'OFF'" class="text-red"> {{dbc.arduinoObject.vacuum}} </h1>
     </a>
   </section>
+
   <!-- fan container -->
   <section class="flex-fan-main_container">
     <a href="#!fan">
@@ -67,4 +70,7 @@
         <h1 ng-show="dbc.arduinoObject.fan === 'OFF'" class="text-red"> {{dbc.arduinoObject.fan}} </h1>
     </a>
   </section>
+</section>
+<section>
+  <button type="button" ng-click="dbc.logout()"> Logout </button>
 </section>

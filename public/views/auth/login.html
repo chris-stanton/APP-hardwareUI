@@ -1,0 +1,13 @@
+
+
+    <section class="flex-login-container">
+      <section class="login-message-container">
+        <h1> {{login.message}} </h1>
+      </section>
+      <section class="login-input-container">
+        <img ng-src="../../assets/images/icons/favicon.ico" >
+        <input ng-model="login.user.username" type="text" placeholder="Username">
+        <input ng-model="login.user.password" type="password" placeholder="Password">
+        <button ng-click="login.login(lc.user)" type="button"> Login </button>
+      </section>
+    </section>
