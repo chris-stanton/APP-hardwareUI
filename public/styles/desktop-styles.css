@@ -81,6 +81,66 @@ main {
 
 
 
+/*====================*/
+/*                    */
+/*     AUTH VIEWS     */
+/*                    */
+/*====================*/
+/*login main container*/
+.flex-login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .flex-login-container .login-message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+  }
+    .login-message-container h1 {
+      color: #ff0000;
+      text-shadow: 1px 1px 1px #ffffff;
+      font-size: 2em;
+      text-align: center;
+    }
+  .flex-login-container .login-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+    .login-input-container img {
+      width: 10vw;
+      margin: 40px 0px;
+    }
+    .login-input-container input {
+      width: 30%;
+      height: 28px;
+      margin: 5px 0px;
+    }
+    .login-input-container button {
+      width: 20%;
+      height: 40px;
+      margin: 15px 0px;
+      background-color: #244bd7;
+      color: #ffffff;
+      outline: none;
+    }
+
+
+
+
+
+
+
+
+
 
 /*====================*/
 /*                    */
@@ -96,6 +156,7 @@ main .row-one {
   align-items: center;
   justify-content: center;
 }
+
   /*temp container*/
   .row-one .flex-temp-main_container {
     display: flex;
@@ -113,6 +174,7 @@ main .row-one {
       font-family: fantasy;
       text-shadow: 1px 1px 1px #ffffff;
     }
+
   /*rpm container*/
   .row-one .flex-rpm-main_container {
     display: flex;
@@ -139,6 +201,7 @@ main .row-two {
   height: 40vh;
   align-items: center;
 }
+
   /*video container*/
   .row-two .flex-video-main_container {
     display: flex;
@@ -161,6 +224,7 @@ main .row-three {
   height: 30vh;
   align-items: center;
 }
+
   /*light container*/
   .row-three .flex-light-main_container {
     display: flex;
@@ -177,6 +241,7 @@ main .row-three {
       font-family: fantasy;
       text-shadow: 1px 1px 1px #ffffff;
     }
+
   /*vaccum container*/
   .row-three .flex-vacuum-main_container {
     display: flex;
@@ -193,6 +258,7 @@ main .row-three {
       font-family: fantasy;
       text-shadow: 1px 1px 1px #ffffff;
     }
+
   /*fan container*/
   .row-three .flex-fan-main_container {
     display: flex;
