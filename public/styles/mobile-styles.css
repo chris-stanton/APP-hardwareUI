@@ -63,6 +63,27 @@
 
 
 
+/*====================*/
+/*                    */
+/*     AUTH VIEWS     */
+/*                    */
+/*====================*/
+.login-input-container img {
+  width: 30vw;
+  margin: 40px 0px;
+}
+.login-input-container input {
+  width: 70%;
+}
+.login-input-container button {
+  width: 60%;
+}
+
+
+
+
+
+
 
 /*====================*/
 /*                    */
