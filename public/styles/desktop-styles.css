@@ -156,6 +156,7 @@ main .row-one {
   align-items: center;
   justify-content: center;
 }
+
   /*temp container*/
   .row-one .flex-temp-main_container {
     display: flex;
@@ -173,6 +174,7 @@ main .row-one {
       font-family: fantasy;
       text-shadow: 1px 1px 1px #ffffff;
     }
+
   /*rpm container*/
   .row-one .flex-rpm-main_container {
     display: flex;
@@ -199,6 +201,7 @@ main .row-two {
   height: 40vh;
   align-items: center;
 }
+
   /*video container*/
   .row-two .flex-video-main_container {
     display: flex;
@@ -221,6 +224,7 @@ main .row-three {
   height: 30vh;
   align-items: center;
 }
+
   /*light container*/
   .row-three .flex-light-main_container {
     display: flex;
@@ -237,6 +241,7 @@ main .row-three {
       font-family: fantasy;
       text-shadow: 1px 1px 1px #ffffff;
     }
+
   /*vaccum container*/
   .row-three .flex-vacuum-main_container {
     display: flex;
@@ -253,6 +258,7 @@ main .row-three {
       font-family: fantasy;
       text-shadow: 1px 1px 1px #ffffff;
     }
+
   /*fan container*/
   .row-three .flex-fan-main_container {
     display: flex;

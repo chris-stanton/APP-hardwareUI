@@ -12,6 +12,10 @@
         <h1 ng-show="dbc.arduinoObject.temp >= 80" class="text-red"> {{dbc.arduinoObject.temp}} &#8457; </h1>
     </a>
   </section>
+
+  <section>
+    <button type="button" ng-click="dbc.logout()"> Logout </button>
+  </section>
   <!-- rpm container -->
   <section class="flex-rpm-main_container">
     <a href="#!rpm">
@@ -35,9 +39,6 @@
       <img ng-src="../assets/images/backgrounds/video-light.png" ng-show="dbc.arduinoObject.light === 'ON'">
       <img ng-src="../assets/images/backgrounds/video-dark.png" ng-show="dbc.arduinoObject.light === 'OFF'">
     </a>
-  </section>
-  <section>
-    <button type="button" ng-click="dbc.logout()"> Logout </button>
   </section>
 </section>
 
