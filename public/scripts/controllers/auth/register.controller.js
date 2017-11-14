@@ -10,12 +10,12 @@ myApp.controller('RegisterController', ['InitFactory', '$location', '$http', fun
         if(self.user.username === '' || self.user.password === '') {
           self.error = "Missing Credentials! Please try again";
         } else {
-          console.log('registerUser -- sending to server...', self.user);
+          console.log('sending user credentials to server...', self.user);
           $http.post('/register', self.user).then(function(response) {
-            console.log('registerUser -- success');
+            console.log('registering user success');
             $location.path('/dashboard');
           }).catch(function(response) {
-            console.log('registerUser -- error');
+            console.log('error registering user');
             self.error = "Please try again."
           })
         }

@@ -3,7 +3,7 @@ myApp.controller('LoginController',['$http', '$location', 'UserService',function
 
   console.log('LoginController Running...');
 
-    var self = this;
+    const self = this;
 // setting user variable to empty string on init
     self.user = {
       username: '',
