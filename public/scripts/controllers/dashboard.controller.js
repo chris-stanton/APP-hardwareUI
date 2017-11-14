@@ -5,12 +5,6 @@ myApp.controller('DashboardController',['InitFactory', 'UserService', 'alertify'
 
   const self = this;
 
-  self.message = 'angular sourced';
-
-  self.logout = () => {
-    UserService.logout();
-  }
-
   // init data from arduino (data being sent form factory)
   self.arduinoObject = InitFactory.arduinoObject;
 
@@ -24,7 +18,10 @@ myApp.controller('DashboardController',['InitFactory', 'UserService', 'alertify'
     alertify.error("Error checking RPM DASHBOARD status");
   }
 
-
+  // logout button click listener
+  self.logout = () => {
+    UserService.logout();
+  }
 
 
 

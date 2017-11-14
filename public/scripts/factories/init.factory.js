@@ -20,12 +20,10 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', function($http, $
 
 
 
-
-
   // public API
   return {
     // init object from arduino
-    arduinoObject : arduinoObject
+    arduinoObject : arduinoObject,
   }
 
 }]); // end myAPP
