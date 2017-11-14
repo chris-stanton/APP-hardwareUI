@@ -34,7 +34,7 @@ myApp.factory('UserService', function($http, $location, alertify){
         $location.path("/login");
         console.log('Logged out');
       });
-    };
+    }
 
   }; //end return
 }); //end myApp
