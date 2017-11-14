@@ -3,6 +3,7 @@ var express = require('express');
 var router = express.Router();
 var passport = require('passport');
 var path = require('path');
+var pg = require('pg');
 
 // Handles login form POST from index.html
 router.post('/',
@@ -15,7 +16,7 @@ router.post('/',
 // Handle index file separately
 // Also catches any other request not explicitly matched elsewhere
 router.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '../../public/views/index.html'));
+  res.sendFile(path.join(__dirname, '../../../public/index.html'));
 });
 
 module.exports = router;

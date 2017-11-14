@@ -1,0 +1,13 @@
+
+<section>
+  <h1 class="lead">Register User</h1>
+  <h1 ng-if="message != ''">{{message}}</h2>
+
+  <label for="username">Username:</label>
+  <input type="text" ng-model="reg.user.username" />
+
+  <label for="password">Password:</label>
+  <input type="password" ng-model="reg.user.password" />
+
+  <button type="button" ng-click="reg.addNewUser(reg.user)"></button>
+</section>

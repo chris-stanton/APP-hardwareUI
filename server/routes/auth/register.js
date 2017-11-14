@@ -2,17 +2,17 @@
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
-// var Users = require('../models/user');
 var path = require('path');
+var pg = require('pg');
+var pool = require('../../modules/database-config');
 
 // module with bcrypt functions
-var encryptLib = require('../modules/encryption');
-var connection = require('../modules/connection');
-var pg = require('pg');
+var encryptLib = require('../../modules/encryption.js');
+var connection = require('../../modules/connection.js');
 
 // Handles request for HTML file
 router.get('/', function(req, res, next) {
-    res.sendFile(path.resolve(__dirname, '../public/views/register.html'));
+    res.sendFile(path.resolve(__dirname, '../../../public/views/register.html'));
 });
 
 // Handles POST request with new user data

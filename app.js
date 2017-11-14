@@ -6,14 +6,13 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const passport = require('./server/strategies/user_sql.js');
 const session = require('express-session');
-// const pool = require('./server/modules/database-config');
 
 // defining routes
-const index = require('./routes/auth/index');
-const user = require('./routes/auth/user');
-const register = require('./routes/auth/register');
+const index = require('./server/routes/auth/index.js');
+const user = require('./server/routes/auth/user.js');
+const register = require('./server/routes/auth/register.js');
 
-const routes = require('./server/routes/arduino.js');
+const arduino = require('./server/routes/arduino.js');
 
 // serve back static files
 app.use(express.static(path.join(__dirname, './public')));

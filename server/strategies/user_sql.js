@@ -9,10 +9,11 @@ var encryptLib = require('../modules/encryption');
 var connection = require('../modules/database-config.js');
 var pg = require('pg');
 
+
 // connection to DB
 var config = {
   user: 'chrisstanton', //env var: PGUSER
-  database: 'inspection-log', //env var: PGDATABASE
+  database: 'hardwareUI', //env var: PGDATABASE
   password: 'null', //env var: PGPASSWORD
   port: 5432, //env var: PGPORT
   max: 10, // max number of clients in the pool
