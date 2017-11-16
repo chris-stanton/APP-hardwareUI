@@ -12,13 +12,15 @@ var pg = require('pg');
 
 // connection to DB
 var config = {
-  user: 'chrisstanton', //env var: PGUSER
-  database: 'hardwareUI', //env var: PGDATABASE
-  password: 'null', //env var: PGPASSWORD
-  port: 5432, //env var: PGPORT
-  max: 10, // max number of clients in the pool
-  idleTimeoutMillis: 1500, // 1.5s how long a client is allowed to remain idle before being closed
-};
+    user: process.env.PG_USER || 'chrisstanton', //env var: PGUSER
+    password: process.env.DATABASE_SECRET || null, //env var: PGPASSWORD
+    host: process.env.DATABASE_SERVER || 'localhost', // Server hosting the postgres database
+    port: process.env.DATABASE_PORT || 5432, //env var: PGPORT
+    database: process.env.DATABASE_NAME || 'hardwareUI', //env var: PGDATABASE
+    max: 10, // max number of clients in the pool
+    idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
+  };
+
 
 //this initializes a connection pool
 //it will keep idle connections open for a 30 seconds
