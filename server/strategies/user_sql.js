@@ -8,6 +8,10 @@ var localStrategy = require('passport-local').Strategy;
 var encryptLib = require('../modules/encryption');
 var connection = require('../modules/database-config.js');
 var pg = require('pg');
+var url = require('url');
+
+
+var config = {};
 
 
 // connection to DB
