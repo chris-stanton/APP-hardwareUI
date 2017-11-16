@@ -3,14 +3,14 @@
 // Passport file //
 ///////////////////
 
-var passport = require('passport');
-var localStrategy = require('passport-local').Strategy;
-var encryptLib = require('../modules/encryption');
-var connection = require('../modules/database-config.js');
-var pg = require('pg');
-var url = require('url');
+const passport = require('passport');
+const localStrategy = require('passport-local').Strategy;
+const encryptLib = require('../modules/encryption');
+const connection = require('../modules/database-config.js');
+const pg = require('pg');
+const url = require('url');
 
-
+// setting config empty
 var config = {};
 
 
@@ -18,8 +18,8 @@ var config = {};
 if (process.env.DATABASE_URL) {
 
   // Heroku gives a url, not a connection object
-  var params = url.parse(process.env.DATABASE_URL);
-  var auth = params.auth.split(':');
+  const params = url.parse(process.env.DATABASE_URL);
+  const auth = params.auth.split(':');
   // for uses with *heroku
   config = {
     user: auth[0],
