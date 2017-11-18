@@ -7,6 +7,8 @@ myApp.controller('DashboardController',['InitFactory', 'UserService', 'alertify'
 
   // init data from arduino (data being sent form factory)
   self.arduinoObject = InitFactory.arduinoObject;
+  // users cridentials from DB
+  self.userObject = UserService.userObject;
 
   // checks for 0 rpms and if, then displays OFF
   if(self.arduinoObject.rpm === 0) {

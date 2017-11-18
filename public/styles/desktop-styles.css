@@ -168,7 +168,17 @@ main {
 /*      MAIN VIEW     */
 /*                    */
 /*====================*/
-
+/*logout button*/
+.flex-logout-container span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 0.9em;
+}
+.flex-logout-container img {
+  height: 20px;
+}
 /*row one container*/
 main .row-one {
   display: flex;

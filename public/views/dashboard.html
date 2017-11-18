@@ -2,6 +2,9 @@
 <!-- ========= -->
 <!--  ROW ONE  -->
 <!-- ========= -->
+<section class="flex-logout-container">
+  <span ng-click="dbc.logout()"><img ng-src="../assets/images/icons/logout.ico"> Logout </span>
+</section>
 <section class="row-one">
   <!-- temp container -->
   <section class="flex-temp-main_container">
@@ -70,7 +73,4 @@
         <h1 ng-show="dbc.arduinoObject.fan === 'OFF'" class="text-red"> {{dbc.arduinoObject.fan}} </h1>
     </a>
   </section>
-</section>
-<section>
-  <button type="button" ng-click="dbc.logout()"> Logout </button>
 </section>
