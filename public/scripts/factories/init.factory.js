@@ -4,7 +4,8 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', 'UserService', fu
   console.log('InitFactory running...');
 
 
-   function init() {
+
+  function init() {
     // logged in alert message
     setTimeout(function() {
       let loggedInUser = UserService.userObject.userName;

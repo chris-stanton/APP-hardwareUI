@@ -15,6 +15,8 @@ myApp.factory('UserService', function($http, $location, alertify){
           // user info that has a current session on the server
           userObject.userName = response.data.username;
           userObject.user_id = response.data.user_id;
+          userObject.email = response.data.email;
+          console.log('userservice ', userObject);
           console.log('User ' + userObject.userName + ' Logged in success');
         } else {
           // user has no session, bouncing them back to the login page
