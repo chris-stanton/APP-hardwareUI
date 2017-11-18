@@ -1,7 +1,8 @@
 
-myApp.controller('LoginController',['$http', '$location', 'UserService',function($http, $location, UserService) {
+myApp.controller('LoginController',['$http', '$location', '$route', 'UserService',function($http, $location, $route, UserService) {
 
   console.log('LoginController Running...');
+
 
     const self = this;
 // setting user variable to empty string on init
