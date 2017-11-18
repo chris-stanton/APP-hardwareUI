@@ -15,8 +15,12 @@ myApp.factory('UserService', function($http, $location, alertify){
           // user info that has a current session on the server
           userObject.userName = response.data.username;
           userObject.user_id = response.data.user_id;
-          alertify.success("Welcome " + userObject.userName);
-          console.log(userObject.userName + 'Logged in success');
+            // alertify login message
+            setTimeout(function() {
+              alertify.logPosition('top right');
+              alertify.log('Welcome ' + userObject.userName);
+            }, 200);
+          console.log('User ' + userObject.userName + ' Logged in success');
         } else {
           // user has no session, bouncing them back to the login page
           $location.path("/login");
@@ -31,8 +35,13 @@ myApp.factory('UserService', function($http, $location, alertify){
     // logs user out of session
     logout : () => {
       $http.get('/user/logout').then((response) => {
+        // alertify logged out message
+        setTimeout(function() {
+          alertify.logPosition('top right');
+          alertify.log(userObject.userName  + ' logged out');
+        }, 200);
         $location.path("/login");
-        console.log('Logged out');
+        console.log(userObject.userName + ' Logged out');
       });
     }
 
