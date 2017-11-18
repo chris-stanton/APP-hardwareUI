@@ -1,16 +1,13 @@
 
-<section>
-  <h1 class="lead">Register User</h1>
-  <h1 ng-if="message != ''">{{message}}</h2>
-
-  <label for="username">Username:</label>
-  <input type="text" ng-model="reg.user.username" />
-
-  <label for="password">Password:</label>
-  <input type="password" ng-model="reg.user.password" />
-
-  <label for="password">E-Mail:</label>
-  <input type="password" ng-model="reg.user.email" />
-
-  <button type="button" ng-click="reg.addNewUser(reg.user)"> Submit </button>
+<section class="flex-login-container">
+  <section class="login-message-container">
+    <h1> {{reg.message}} </h1>
+  </section>
+  <section class="login-input-container">
+    <img ng-src="../../assets/images/icons/favicon.ico" >
+    <input type="text" ng-model="reg.user.username" placeholder="Username" />
+    <input type="password" ng-model="reg.user.password" placeholder="Password" />
+    <input type="password" ng-model="reg.user.email" placeholder="Email" />
+    <button type="button" ng-click="reg.addNewUser(reg.user)"> Register </button>
+  </section>
 </section>

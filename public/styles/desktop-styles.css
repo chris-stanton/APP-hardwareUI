@@ -142,7 +142,17 @@ main {
       background-color: #244bd7;
       color: #ffffff;
       outline: none;
+      cursor: pointer;
     }
+    .login-input-container a {
+      font-size: 0.9em;
+      color: #ffffff;
+      margin-top: 20px;
+    }
+    .login-input-container a:hover {
+      color: #244bd7;
+    }
+
 
 
 
@@ -339,6 +349,7 @@ main .row-three {
   }
     .temp-radio-container input {
       width: 50%;
+      cursor: pointer;
     }
 
 
@@ -384,6 +395,7 @@ main .row-three {
   }
     .rpm-radio-container input {
       width: 50%;
+      cursor: pointer;
     }
 
 
@@ -475,6 +487,7 @@ main .row-three {
     }
     form input {
       margin: 0px 20px;
+      cursor: pointer;
       /*height: 100%;*/
     }
 
@@ -517,6 +530,7 @@ main .row-three {
     }
     form input {
       margin: 0px 20px;
+      cursor: pointer;
       /*height: 100%;*/
     }
 
@@ -560,6 +574,7 @@ main .row-three {
     }
     form input {
       margin: 0px 20px;
+      cursor: pointer;
       /*height: 100%;*/
     }
 

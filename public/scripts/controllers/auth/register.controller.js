@@ -4,11 +4,20 @@ myApp.controller('RegisterController', ['InitFactory', '$location', '$http', fun
 
       const self = this;
 
+// setting user variable to empty string on init
+    self.user = {
+      username: '',
+      password: '',
+      email: ''
+    };
+// setting message to empty string on init
+    self.message = '';
+
 // button click to add new user to DB
       self.addNewUser = function(user) {
         console.log('user', user);
-        if(self.user.username === '' || self.user.password === '') {
-          self.error = "Missing Credentials! Please try again";
+        if(user.username === '' || user.password === '' || user.email === '') {
+          self.message = "Missing Registration Credentials";
         } else {
           console.log('sending user credentials to server...', self.user);
           $http.post('/register', self.user).then(function(response) {

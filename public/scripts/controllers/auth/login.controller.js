@@ -14,7 +14,7 @@ myApp.controller('LoginController',['$http', '$location', '$route', 'UserService
     self.message = '';
 
 // login button click
-    self.login = () => {
+    self.login = (user) => {
       // checking for null login values
       if(self.user.username === '' && self.user.password === '') {
         self.message = "Missing Username and Password";
