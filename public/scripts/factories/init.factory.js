@@ -4,7 +4,6 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', 'UserService', fu
   console.log('InitFactory running...');
 
 
-
   function init() {
     // logged in alert message
     setTimeout(function() {
@@ -16,7 +15,7 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', 'UserService', fu
 
   init();
 
-  // init object from Arduino (mockup object)
+  // init object from Arduino system status (mockup object)
   const arduinoObject = {
     temp: 73,
     rpm: 18,
@@ -27,6 +26,7 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', 'UserService', fu
     fan: 'OFF'
   }
 
+  // init object from Arduino connection status (mockup object)
   const arduinoConnection = {
     strength: 'Good',
     name: 'stanton',
