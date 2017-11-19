@@ -10,14 +10,21 @@
 ## Technologies Used:
 #### Software
   1. Express.js
-  2. Angular.js
-  3. Angular Route
-  4. Node.js
-  5. Socket.io
-  6. Johnny-Five
-  7. Body-Parser
-  8. PG - version
-  9. GIT / GitHub
+  2. Express-session
+  3. Angular.js
+  4. Angular Route
+  5. Node.js
+  6. Socket.io
+  7. Johnny-Five
+  8. Body-Parser
+  9. Bcrypt
+  10. Dotenv
+  11. PassportJS
+  12. Passport-local
+  13. PG
+  14. Alertify.js
+  15. GIT / GitHub
+  16. Heroku
 
 #### Hardware
   1. Arduino ONU
