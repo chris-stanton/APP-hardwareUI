@@ -27,6 +27,11 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', 'UserService', fu
     fan: 'OFF'
   }
 
+  const arduinoConnection = {
+    strength: 'Good',
+    name: 'stanton',
+    address: '90.639.00.753'
+  }
 
 
 
@@ -34,8 +39,10 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', 'UserService', fu
 
   // public API
   return {
-    // init object from arduino
+    // init object from arduino system status details
     arduinoObject : arduinoObject,
+    // init object from arduino for connection details
+    arduinoConnection : arduinoConnection
   }
 
 }]); // end myAPP

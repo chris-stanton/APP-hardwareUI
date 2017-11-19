@@ -8,6 +8,8 @@ myApp.controller('VideoController',['InitFactory', '$location', 'alertify', func
 
   // init data from arduino
   self.uistatus = InitFactory.arduinoObject;
+  // init aurduino connection data from arduino
+  self.uiconnection = InitFactory.arduinoConnection;
 
 
 

@@ -6,15 +6,15 @@
     <section class="flex-videostats-container">
       <div>
         <h5> Connection Strength </h5>
-        <h6> value </h6>
+        <h6> {{vc.uiconnection.strength}} </h6>
       </div>
       <div>
         <h5> Connection Name </h5>
-        <h6> value </h6>
+        <h6> {{vc.uiconnection.name}} </h6>
       </div>
       <div>
         <h5> IP Address </h5>
-        <h6> value </h6>
+        <h6> {{vc.uiconnection.address}} </h6>
       </div>
     </section>
 
@@ -29,7 +29,7 @@
     <a href="#!dashboard">
       <img src="../assets/images/icons/dashboard.ico">
     </a>
-    <span> {{rc.status}} </span>
+    <span> {{vc.status}} </span>
   </section>
 
 </section>
