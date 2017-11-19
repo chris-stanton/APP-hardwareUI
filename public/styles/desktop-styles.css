@@ -78,11 +78,12 @@ main {
   text-shadow: 0px 0px 50px #41fa00;
 }
 
+
 /*alert message styling*/
 .alertMessage {
   display: flex;
   justify-content: center;
-  color: #41fa00;
+  color: #f900fe;
 }
 .alertMessage img {
   height: 20px;
