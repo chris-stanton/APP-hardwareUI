@@ -1,11 +1,11 @@
 
 // requiring dependancies
-var express = require('express');
-var router = express.Router();
-var passport = require('passport');
-var pg = require('pg');
-var path = require('path');
-var pool = require('../../modules/database-config');
+const express = require('express');
+const router = express.Router();
+const passport = require('passport');
+const pg = require('pg');
+const path = require('path');
+const pool = require('../../modules/database-config');
 
 // Handles Ajax request for user information if user is authenticated
 router.get('/', function(req, res) {

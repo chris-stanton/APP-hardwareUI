@@ -1,14 +1,14 @@
 
-var express = require('express');
-var router = express.Router();
-var passport = require('passport');
-var path = require('path');
-var pg = require('pg');
-var pool = require('../../modules/database-config');
+const express = require('express');
+const router = express.Router();
+const passport = require('passport');
+const path = require('path');
+const pg = require('pg');
+const pool = require('../../modules/database-config');
 
 // module with bcrypt functions
-var encryptLib = require('../../modules/encryption.js');
-var connection = require('../../modules/connection.js');
+const encryptLib = require('../../modules/encryption.js');
+const connection = require('../../modules/connection.js');
 
 // Handles request for HTML file
 router.get('/', function(req, res, next) {

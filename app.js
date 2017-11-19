@@ -7,11 +7,12 @@ const bodyParser = require('body-parser');
 const passport = require('./server/strategies/user_sql.js');
 const session = require('express-session');
 
-// defining routes
+// defining auth routes
 const index = require('./server/routes/auth/index.js');
 const user = require('./server/routes/auth/user.js');
 const register = require('./server/routes/auth/register.js');
 
+// defining other routes
 const arduino = require('./server/routes/arduino.js');
 
 // serve back static files
