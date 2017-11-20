@@ -1,4 +1,8 @@
 
+///////////////////
+// Passport file //
+///////////////////
+
 // requiring dependancies
 const express = require('express');
 const router = express.Router();
