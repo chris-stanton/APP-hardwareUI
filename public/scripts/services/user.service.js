@@ -16,15 +16,15 @@ myApp.factory('UserService', function($http, $location, alertify){
           userObject.userName = response.data.username;
           userObject.user_id = response.data.user_id;
           userObject.email = response.data.email;
-          console.log('User ' + userObject.userName + ' Logged in success');
+            console.log('User ' + userObject.userName + ' Logged in success');
         } else {
           // user has no session, bouncing them back to the login page
           $location.path("/login");
-          console.log('error finding user');
+            console.log('error finding user');
         }
       },(response) => {
         $location.path("/login");
-        console.log('getuser error: ', response);
+          console.log('getuser error: ', response);
       });
     },
 
@@ -34,10 +34,13 @@ myApp.factory('UserService', function($http, $location, alertify){
         // alertify logged out message
         setTimeout(function() {
           alertify.logPosition('top right');
-          alertify.log('<div class="alertMessage"><img src="../../assets/images/icons/favicon.ico">' + userObject.userName  + ' logged out</div>');
+          alertify.log('<div class="alertMessage">' +
+                        '<img src="../../assets/images/icons/favicon.ico">' +
+                          userObject.userName  +
+                        ' logged out</div>');
         }, 200);
         $location.path("/login");
-        console.log(userObject.userName + ' Logged out');
+          console.log(userObject.userName + ' Logged out');
       });
     }
 

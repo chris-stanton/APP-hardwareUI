@@ -9,7 +9,10 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', 'UserService', fu
     setTimeout(function() {
       let loggedInUser = UserService.userObject.userName;
       alertify.logPosition('top right');
-      alertify.log('<div class="alertMessage"><img src="../../assets/images/icons/favicon.ico"> Welcome ' + loggedInUser + '</div>');
+      alertify.log('<div class="alertMessage">' +
+                     '<img src="../../assets/images/icons/favicon.ico"> Welcome ' +
+                       loggedInUser +
+                   '</div>');
     }, 200);
   };
 
