@@ -16,7 +16,7 @@ myApp.factory('UserService', function($http, $location, alertify){
           userObject.userName = response.data.username;
           userObject.user_id = response.data.user_id;
           userObject.email = response.data.email;
-            console.log('User ' + userObject.userName + ' Logged in success');
+            console.log(userObject.userName + ' Logged in');
         } else {
           // user has no session, bouncing them back to the login page
           $location.path("/login");
@@ -24,7 +24,7 @@ myApp.factory('UserService', function($http, $location, alertify){
         }
       },(response) => {
         $location.path("/login");
-          console.log('user error: ', response);
+          console.log('Findng user error: ', response);
       });
     },
 
