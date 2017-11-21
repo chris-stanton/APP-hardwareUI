@@ -13,7 +13,6 @@ const pool = require('../../modules/database-config');
 
 // Handles Ajax request for user information if user is authenticated
 router.get('/', function(req, res) {
-  console.log('get /user route');
   // check if logged in
   if(req.isAuthenticated()) {
     // send back user object from database
@@ -35,7 +34,7 @@ router.get('/', function(req, res) {
 // clear all server session information about this user
 router.get('/logout', function(req, res) {
   // Use passport's built-in method to log out the user
-  console.log('Logged out');
+  console.log('User logged out');
   req.logout();
   res.sendStatus(200);
 });

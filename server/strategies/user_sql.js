@@ -48,7 +48,6 @@ if (process.env.DATABASE_URL) {
 //it will keep idle connections open for a 30 seconds
 //and set a limit of maximum 10 idle clients
 var pool = new pg.Pool(config);
-console.log('clients connected: ', connectCount);
 
 var acquireCount = 0
 pool.on('acquire', function (client) {
@@ -61,6 +60,7 @@ pool.on('connect', function () {
   connectCount++;
   console.log('client connected: ', connectCount);
 });
+console.log('clients connected: ', connectCount);
 
 passport.serializeUser(function(user, done) {
     done(null, user.id);
