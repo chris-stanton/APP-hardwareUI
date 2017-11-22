@@ -427,7 +427,7 @@ main .row-three {
       .flex-videodata-container .flex-videostats-container {
         display: flex;
         flex: 1;
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
         font-size: 1em;
         margin: 20px;
@@ -435,23 +435,16 @@ main .row-three {
       }
         .flex-videostats-container .flex-dataDisplay-container {
           display: flex;
-          flex-direction: column;
-          /*justify-content: center;*/
-          align-content: baseline;
+          flex-direction: row;
           align-items: center;
-          margin: 5px;
         }
         .flex-dataDisplay-container h5 {
-          display: flex;
-          flex-direction: row;
-          align-items: baseline;
-          align-self: baseline;
+          margin: 15px;
           font-size: 1.2em;
         }
         .flex-dataDisplay-container h6 {
-          display: flex;
-          flex-direction: row;
-          font-size: 1em;
+          margin: 20px;
+          font-size: 0.9em;
         }
       .flex-videodata-container .flex-videofeed-container {
         display: flex;
