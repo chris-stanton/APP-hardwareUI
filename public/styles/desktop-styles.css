@@ -421,22 +421,32 @@ main .row-three {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /*width: 100%;*/
     margin-top: 20px;
     }
       .flex-videodata-container .flex-videostats-container {
         display: flex;
         flex: 1;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        /*justify-content: center;*/
+        align-content: baseline;
         text-align: center;
-        width: 100%;
         font-size: 1em;
+        margin: 20px;
+        border: 1px solid #ffffff;
       }
-        .flex-videostats-container div {
+        .flex-videostats-container .flex-dataDisplay-container {
           display: flex;
           flex-direction: column;
+          /*justify-content: center;*/
+          align-items: baseline;
           margin: 5px;
+        }
+        .flex-dataDisplay-container h5 {
+          font-size: 1em;
+        }
+        .flex-dataDisplay-container h6 {
+          font-size: 1em;
         }
       .flex-videodata-container .flex-videofeed-container {
         display: flex;
