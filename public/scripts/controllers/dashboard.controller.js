@@ -18,7 +18,7 @@ myApp.controller('DashboardController',['InitFactory', 'UserService', 'alertify'
   } else {
     console.log("Error checking RPM DASHBOARD status");
     alertify.error("Error checking RPM DASHBOARD status");
-  }
+  };
 
   // logout button click listener
   self.logout = () => {
