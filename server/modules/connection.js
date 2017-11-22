@@ -1,4 +1,9 @@
 
+///////////////////////////////////////////
+//  DATABASES W/ DEPLOY FILE             //
+//  Note: SETUP FOR DEPLOY WITH HEROKU   //
+//  HEROKU requires a connection string  //
+///////////////////////////////////////////
 
 var connectionString = '';
 
