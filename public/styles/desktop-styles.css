@@ -132,6 +132,10 @@ main {
       width: 10vw;
       margin: 20px 0px 40px 0px;
     }
+    /*.login-input-container img:hover {
+      -webkit-animation: login-img 2.5s infinite linear;
+      animation: login-img 2.5s infinite linear;
+    }*/
     .login-input-container input {
       width: 30%;
       height: 28px;
