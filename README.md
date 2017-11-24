@@ -41,12 +41,13 @@
 ## Install App:
   1. Download zip file
   2. Open terminal and navigate into folder
+  3. Create PostgeSQL database (refer to `` database.sql `` file for details)
   3. Run commands:
-    - ``` npm install ``` Installs Node Packages including dependencies from package.json
-    - ``` npm start ``` Starts server
-    - ``` npm test ``` Starts server using Nodemon
+    - `` npm install `` Installs Node Packages including dependencies from package.json
+    - `` npm start `` Starts server
+    - `` npm test `` Starts server using Nodemon 
   4. Server is listening on port: 5000
-  5. `Procfile` is for Heroku deploy.  Used to tell Heroku how to start the Express server.
+
 
 
 ## License:
