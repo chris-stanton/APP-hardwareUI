@@ -1,5 +1,5 @@
 
-myApp.controller('RegisterController', ['InitFactory', '$location', '$http', function(InitFactory, $location, $http) {
+myApp.controller('RegisterController', ['$location', '$http', 'alertify', function($location, $http, alertify) {
     console.log('RegisterController Running...');
 
       const self = this;
@@ -17,15 +17,19 @@ myApp.controller('RegisterController', ['InitFactory', '$location', '$http', fun
       self.addNewUser = function(user) {
         console.log('user', user);
         if(user.username === '' || user.password === '' || user.email === '') {
-          self.message = "Missing Registration Credentials";
+          alertify.error("Missing Registration Credentials");
+          // self.message = "Missing Registration Credentials";
         } else {
           console.log('sending user credentials to server...', self.user);
           $http.post('/register', self.user).then(function(response) {
             console.log('registering user success');
-            $location.path('/dashboard');
+            alertify.success("User registration completed");
+            // self.message = "User registration completed";
+            $location.path('/login');
           }).catch(function(response) {
             console.log('error registering user');
-            self.error = "Please try again."
+            alertify.error("Error adding User to DB, Please try again.");
+            // self.message = "Error adding User to DB, Please try again."
           })
         }
       }; // end addNewUser()

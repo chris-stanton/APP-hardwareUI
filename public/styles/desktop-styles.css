@@ -82,11 +82,12 @@ main {
 /*alert message styling*/
 .alertMessage {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  color: #f900fe;
 }
 .alertMessage img {
-  height: 20px;
+  height: 25px;
   padding-right: 5px;
 }
 

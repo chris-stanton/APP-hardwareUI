@@ -4,11 +4,13 @@ myApp.factory('InitFactory',['$http', '$location', 'alertify', 'UserService', fu
   console.log('InitFactory running...');
 
 
+// setting screen notifiaction position
+  alertify.logPosition('top right');
+
   function init() {
     // logged in alert message
     setTimeout(function() {
       let loggedInUser = UserService.userObject.userName;
-      alertify.logPosition('top right');
       alertify.log('<div class="alertMessage">' +
                      '<img src="../../assets/images/icons/favicon.ico"> Welcome ' +
                        loggedInUser +

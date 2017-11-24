@@ -1,5 +1,5 @@
 
-myApp.controller('LoginController',['$http', '$location', '$route', 'UserService',function($http, $location, $route, UserService) {
+myApp.controller('LoginController',['$http', '$location', '$route', 'UserService', 'alertify', function($http, $location, $route, UserService, alertify) {
 
   console.log('LoginController Running...');
 
@@ -9,6 +9,8 @@ myApp.controller('LoginController',['$http', '$location', '$route', 'UserService
       username: '',
       password: ''
     };
+// setting alert notification screen position
+    alertify.logPosition('top right');
 // setting message to empty string on init
     self.message = '';
 
@@ -16,11 +18,14 @@ myApp.controller('LoginController',['$http', '$location', '$route', 'UserService
     self.login = (user) => {
       // checking for null login values
       if(self.user.username === '' && self.user.password === '') {
-        self.message = "Missing Username and Password";
+        alertify.error("Missing Username and Password");
+        // self.message = "Missing Username and Password";
       } else if (self.user.username === '' && self.user.password !== '' ){
-        self.message = "Missing Username";
+        alertify.error("Missing Username");
+        // self.message = "Missing Username";
       } else if (self.user.password === '' && self.user.username !== ''){
-        self.message = "Missing Password";
+        alertify.error("Missing Password");
+        // self.message = "Missing Password";
       } else {
         // if login credentials are correct
         console.log('Login credentials sent to server...', self.user);
@@ -31,11 +36,13 @@ myApp.controller('LoginController',['$http', '$location', '$route', 'UserService
             $location.path('/dashboard');
           } else {
             console.log('Login failure response: ', response);
-            self.message = "Wrong Login Credentials";
+            alertify.error("Wrong Login Credentials");
+            // self.message = "Wrong Login Credentials";
           }
         }).catch(function(response){
           console.log('Register User failure response: ', response);
-          self.message = "Wrong Login Credentials";
+          alertify.error("Wrong Login Credentials");
+          // self.message = "Wrong Login Credentials";
         })
       }
     };

@@ -5,6 +5,9 @@ myApp.factory('UserService', function($http, $location, alertify){
 
   const userObject = {};
 
+// setting screen notifiaction position
+  alertify.logPosition('top right');
+
   return {
     userObject : userObject,
 
@@ -33,7 +36,6 @@ myApp.factory('UserService', function($http, $location, alertify){
       $http.get('/user/logout').then((response) => {
         // alertify logged out message
         setTimeout(function() {
-          alertify.logPosition('top right');
           alertify.log('<div class="alertMessage">' +
                         '<img src="../../assets/images/icons/favicon.ico">' +
                           userObject.userName  +
