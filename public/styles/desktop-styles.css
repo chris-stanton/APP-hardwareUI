@@ -99,7 +99,7 @@ main {
 /*     AUTH VIEWS     */
 /*                    */
 /*====================*/
-/*login main container*/
+/*login and registration main container*/
 .flex-login-container {
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@ main {
   }
     .login-input-container img {
       width: 10vw;
-      margin: 40px 0px;
+      margin: 20px 0px 40px 0px;
     }
     .login-input-container input {
       width: 30%;
