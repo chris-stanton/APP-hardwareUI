@@ -28,6 +28,13 @@
 
 #### Hardware
   1. Arduino ONU
+  2. Arduino Capable Monitor (edit Arduino code to specific display)
+  3. 24vDC Power Supply
+  4. 24vDC 50RPM Motor
+  5. DIN Rail w/ Terminal Blocks (refer to system drawing)
+  6. 24vDC 1800RPM Fan
+  7. 24vDC 500RPM Fan
+  8. 12vDC RGB Light Kit w/ Controller
 
 
 
