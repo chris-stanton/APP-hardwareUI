@@ -109,6 +109,9 @@
         width: 90%;
       }
 
+  .flex-main-temp .temp-output-container {
+    margin: 60px 0px 20px 0px;
+  }
 
 
 }
