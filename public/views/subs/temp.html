@@ -1,5 +1,6 @@
 
 <section class="flex-main-temp">
+
   <section class="temp-output-container">
     <h1 ng-show="tc.uistatus.temp <= 69" class="text-shadow-blue"> {{tc.uistatus.temp}} </h1>
     <h1 ng-show="tc.uistatus.temp > 69 && tc.uistatus.temp < 80" class="text-shadow-orange"> {{tc.uistatus.temp}} </h1>
@@ -8,12 +9,16 @@
       <h6 ng-show="tc.uistatus.temp > 69 && tc.uistatus.temp < 80" class="text-orange"> &#8457; </h6>
       <h6 ng-show="tc.uistatus.temp >= 80" class="text-red"> &#8457; </h6>
   </section>
+
   <section class="temp-radio-container">
     <input type="range" min="65" max="90" ng-model="tc.uistatus.temp" ng-change="tc.tempChange(tc.uistatus.temp)">
   </section>
-  <section>
-    <canvas id="tempChart" width="320" height="150"></canvas>
+
+  <section class="temp-chart-container">
+    <canvas id="tempChart"></canvas>
   </section>
+
+
   <section class="sub-footer">
     <a href="#!dashboard">
       <img ng-src="../assets/images/icons/dashboard.ico">

@@ -43,7 +43,7 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
                 '#000000'
             ],
             borderColor: [
-                '#ff0000'
+                '#ff0000',
             ],
             borderWidth: 1,
             fill: false
@@ -53,7 +53,7 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
             hidden: true,
             data: [45, 47, 50, 52, 56, 60, 65, 63, 65, 61],
             backgroundColor: [
-                '#000000  '
+                '#000000'
             ],
             borderColor: [
                 '#0012ff'
