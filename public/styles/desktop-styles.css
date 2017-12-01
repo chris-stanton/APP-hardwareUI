@@ -333,7 +333,7 @@ main .row-three {
   /*TEMPERATURE data output container*/
   .flex-main-temp .temp-output-container {
     display: flex;
-    flex: 3;
+    flex: 4;
     flex-direction: row;
     justify-content: center;
     text-align: center;
@@ -365,12 +365,12 @@ main .row-three {
     }
   .flex-main-temp .temp-chart-container {
     display: flex;
-    flex: 2;
+    flex: 3;
     flex-direction: row;
   }
     .temp-chart-container canvas {
       display: flex;
-      width: 320px;
+      width: 350px;
       height: 160px;
     }
 
