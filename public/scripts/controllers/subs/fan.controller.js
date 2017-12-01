@@ -11,6 +11,7 @@ myApp.controller('FanController',['InitFactory', '$location', 'alertify', functi
 
   // Radio button listener to check footer status
   self.fanChange = (uistatus) => {
+    console.log('button click ', uistatus);
     if(uistatus === 'ON') {
       self.status = 'Fan ON';
     } else if(uistatus === 'OFF') {
