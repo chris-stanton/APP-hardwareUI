@@ -11,6 +11,9 @@
   <section class="temp-radio-container">
     <input type="range" min="65" max="90" ng-model="tc.uistatus.temp" ng-change="tc.tempChange(tc.uistatus.temp)">
   </section>
+  <section>
+    <canvas id="tempChart" width="320" height="150"></canvas>
+  </section>
   <section class="sub-footer">
     <a href="#!dashboard">
       <img ng-src="../assets/images/icons/dashboard.ico">
