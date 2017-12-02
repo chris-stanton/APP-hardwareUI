@@ -28,7 +28,7 @@ myApp.controller('TempController',['InitFactory', '$location', 'alertify', funct
   // controller value on init
   self.tempChange(uistatus);
 
-  // chart.js config
+  // chart.js data logger config
   let ctx = document.getElementById("tempChart").getContext('2d');
   let myChart = new Chart(ctx, {
     type: 'line',
