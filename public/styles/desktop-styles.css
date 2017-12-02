@@ -365,13 +365,18 @@ main .row-three {
     }
   .flex-main-temp .temp-chart-container {
     display: flex;
+    position: relative;
     flex: 3;
     flex-direction: row;
+    border: 1px solid #ffffff;
+    height: 150px;
+    width: 350px;
+    overflow: auto;
+    text-align: left;
+    justify-content: flex-start;
   }
     .temp-chart-container canvas {
-      display: flex;
-      width: 350px;
-      height: 160px;
+      
     }
 
 
