@@ -1,6 +1,6 @@
-// screen.orientation.lock('portrait-primary').catch(function() {
-//     console.log('screen locked ');
-// });
+screen.orientation.lock('portrait').catch(function() {
+    console.log('screen locked ');
+});
 
 var myApp = angular.module('myApp', ['ngRoute', 'ngAlertify']);
 
