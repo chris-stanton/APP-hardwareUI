@@ -5,6 +5,7 @@ myApp.controller('DashboardController',['InitFactory', 'UserService', 'alertify'
 
   const self = this;
 
+
   // init data from arduino (data being sent form factory)
   self.arduinoObject = InitFactory.arduinoObject;
   // users cridentials from DB

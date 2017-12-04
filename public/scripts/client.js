@@ -1,8 +1,13 @@
+screen.orientation.lock('portrait').catch(function() {
+    console.log('screen locked ');
+});
+
 var myApp = angular.module('myApp', ['ngRoute', 'ngAlertify']);
 
 myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
   // $locationProvider.hashPrefix('');
+
 
   //routes
     $routeProvider
