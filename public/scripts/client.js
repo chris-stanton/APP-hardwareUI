@@ -1,7 +1,11 @@
 
-// screen.orientation.lock('portrait, portrait-secondary').catch(function() {
-//     console.log('screen locked ');
-// });
+// screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
+//
+// if (screen.lockOrientationUniversal(["portrait-primary", "portrait-secondary"])) {
+//   console.log('portrait mode locked');
+// } else {
+//   console.log('error licking portrait mode');
+// }
 
 var myApp = angular.module('myApp', ['ngRoute', 'ngAlertify']);
 
