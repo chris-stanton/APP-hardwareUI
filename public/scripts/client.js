@@ -1,4 +1,4 @@
-screen.orientation.lock('portrait').catch(function() {
+screen.orientation.lock('portrait, portrait-secondary').catch(function() {
     console.log('screen locked ');
 });
 
