@@ -8,6 +8,7 @@ myApp.factory('UserService', function($http, $location, alertify){
 // setting screen notifiaction position
   alertify.logPosition('top right');
 
+
   return {
     userObject : userObject,
 
