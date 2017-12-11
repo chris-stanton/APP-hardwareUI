@@ -12,7 +12,7 @@ const index = require('./server/routes/auth/index.js');
 const user = require('./server/routes/auth/user.js');
 const register = require('./server/routes/auth/register.js');
 
-// defining other routes
+// defining other route files
 const arduino = require('./server/routes/arduino.js');
 
 // serve back static files
