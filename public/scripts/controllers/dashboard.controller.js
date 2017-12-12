@@ -17,8 +17,8 @@ myApp.controller('DashboardController',['InitFactory', 'UserService', 'alertify'
   } else if(self.arduinoObject.rpm !== 0) {
     self.RPMMessage = self.arduinoObject.rpm;
   } else {
-    console.log("Error checking RPM DASHBOARD status");
     alertify.error("Error checking RPM DASHBOARD status");
+    console.log("Error checking RPM DASHBOARD status");
   };
 
   // logout button click listener
