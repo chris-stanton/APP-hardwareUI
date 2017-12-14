@@ -21,7 +21,7 @@
   10. Dotenv
   11. PassportJS
   12. Passport-local
-  13. PG
+  <!-- 13. PG -->
   14. Alertify.js
   15. GIT / GitHub
   16. Heroku
@@ -45,7 +45,7 @@
   3. Run commands:
     - `` npm install `` Installs Node Packages including dependencies from package.json
     - `` npm start `` Starts server
-    - `` npm test `` Starts server using Nodemon 
+    - `` npm test `` Starts server using Nodemon
   4. Server is listening on port: 5000
 
 
