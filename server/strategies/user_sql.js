@@ -13,7 +13,6 @@ const url = require('url');
 // setting config empty
 var config = {};
 
-
 // connection to DB for heroku
 if (process.env.DATABASE_URL) {
   // Heroku gives a url, not a connection object
