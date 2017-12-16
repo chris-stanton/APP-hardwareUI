@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+
 // Passport Session Configuration
 app.use(session({
    secret: 'secret',
